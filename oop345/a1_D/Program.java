@@ -51,7 +51,7 @@ public class Program
             backpack.removeItemFromLeftPocket(itemName);
 
             itemName = "Fork";
-            backpack.removeItemFromLeftPocket(itemName);
+            //backpack.removeItemFromLeftPocket(itemName);
             
             double backPackTotalWeight = backpack.getTotalWeight();
             System.out.println("Backpack total weight: " + backPackTotalWeight);
