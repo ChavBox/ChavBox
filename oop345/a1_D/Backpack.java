@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 #  Name: Charlie Havener
 #  Date: 11/1/2023
 #  Description: A backpack consisting of three Pockets which have a maximum weight capacity 	
@@ -28,9 +28,9 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     
     public Backpack(int mainPocketMaxWeight, int rightPocketMaxWeight, int leftPocketMaxWeight)
     {
-    	mainPocket = new Pocket("Main Pocket", mainPocketMaxWeight);)
+    	mainPocket = new Pocket("Main Pocket", mainPocketMaxWeight);
         rightPocket = new Pocket("Right Pocket", rightPocketMaxWeight);
-        leftPocket = new Pocket("Left pocket", leftPocketMaxWeight);)
+        leftPocket = new Pocket("Left pocket", leftPocketMaxWeight);
     }
 
     //Methods
@@ -45,11 +45,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     # Returns Value: None			
 	*/
     public void insertItemInMainPocket(String itemName, double itemWeight) throws Exception{
-        if(itemWeight < 0){
-            throw new Exception("");
-        }else if(getMainPocketTotalWeight() + itemWeight > mainPocketMaxWeight){
-            throw new Exception();
-        }
+        mainPocket.insertItemInPocket(itemName, itemWeight);
     }
     
     /*       
@@ -63,7 +59,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public void insertItemInRightPocket(String itemName, double itemWeight) throws Exception
     {
-    	
+    	rightPocket.insertItemInPocket(itemName, itemWeight);
     }
     
     /*       
@@ -77,7 +73,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public void insertItemInLeftPocket(String itemName, double itemWeight) throws Exception
     {
-    	
+    	leftPocket.insertItemInPocket(itemName, itemWeight);
     }
     
     /*       
@@ -85,12 +81,13 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     # 
     # Parameters:
     #   itemName: the name of the item to remove
-    # 
+    #         // TODO Auto-generated method stub
+
     # Returns Value: None			
 	*/
     public void removeItemFromMainPocket(String itemName) throws Exception
     {
-    	
+    	mainPocket.removeItemFromPocket(itemName);
     }
     
     /*       
@@ -103,7 +100,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public void removeItemFromRightPocket(String itemName) throws Exception
     {
-    	
+    	rightPocket.removeItemFromPocket(itemName);
     }
     
     /*       
@@ -116,7 +113,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public void removeItemFromLeftPocket(String itemName) throws Exception
     {
-    	
+        leftPocket.removeItemFromPocket(itemName);
     }
     
     /*       
@@ -126,9 +123,9 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     # 
     # Returns Value: None			
 	*/
-    public void listItemsInMainPocket()
+    public void listItemsInMainPocket() 
     {
-    	
+    	mainPocket.listItemsInPocket();
     }
     
     /*       
@@ -140,7 +137,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public void listItemsInRightPocket()
     {
-    	
+    	rightPocket.listItemsInPocket();
     }
     
     /*       
@@ -152,7 +149,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public void listItemsInLeftPocket()
     {
-    	
+    	leftPocket.listItemsInPocket();
     }
     
     /*       
@@ -165,7 +162,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     public double getMainPocketTotalWeight()
     {
     	double totalWeight = 0;
-    	
+    	totalWeight = mainPocket.getPocketTotalWeight();    	
         return totalWeight;
     }
     
@@ -179,7 +176,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     public double getRightPocketTotalWeight()
     {
     	double totalWeight = 0;
-    	
+    	totalWeight = rightPocket.getPocketTotalWeight();
         return totalWeight;
     }
     
@@ -193,7 +190,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     public double getLeftPocketTotalWeight()
     {
     	double totalWeight = 0;
-    	
+    	totalWeight = leftPocket.getPocketTotalWeight();
         return totalWeight;
     }
     
@@ -207,8 +204,9 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     public void listItemsInBackpack()
     {
     	System.out.println("Listing all backpack items...\n");
-    	
-    	
+    	listItemsInMainPocket();
+        listItemsInRightPocket();
+        listItemsInLeftPocket();
     }
     
     /*       
@@ -221,14 +219,12 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     public double getTotalWeight()
     {
     	double totalWeight = 0;
-    	
-
-    	
+    	totalWeight += getMainPocketTotalWeight() + getRightPocketTotalWeight() + getLeftPocketTotalWeight();
         return totalWeight;
     }
 
     /*       
-	# Description: Checks to see if the backpack pocket has another BackPack item
+	# Description: Checks to see if the backpack has another pocket
     # 
     # Parameters: none
     # 
@@ -236,8 +232,7 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public boolean hasNext() 
     {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'hasNext'");
+        return POCKET_QUANTITY > currentIteratingPocket;
     }
 
     /*       
@@ -246,11 +241,26 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
     # Parameters: none
     # 
     # Returns Value: Pocket			
-	*/
+    */
     public Pocket next() 
     {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'next'");
+        switch(currentIteratingPocket){
+            case 0:
+                currentIteratingPocket++;
+                return mainPocket;
+            
+            case 1:
+                currentIteratingPocket++;
+                return rightPocket;
+
+            case 2:
+                currentIteratingPocket++;
+                return leftPocket;
+
+            default:
+                return null;    
+        }
+
     }
 
     /*       
@@ -262,8 +272,8 @@ public class Backpack implements Iterable<Pocket>, Iterator<Pocket>
 	*/
     public Iterator<Pocket> iterator() 
     {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'iterator'");
+        currentIteratingPocket = 0;
+        return this;
     }
 
     
