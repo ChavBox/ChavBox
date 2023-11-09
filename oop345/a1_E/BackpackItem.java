@@ -1,3 +1,8 @@
+/* 
+#  Name: Charlie Havener
+#  Date: 11/7/2023
+#  Description: A container class to hold items for a Backpack	
+*/ 
 public class BackpackItem 
 {
     public String itemName;
