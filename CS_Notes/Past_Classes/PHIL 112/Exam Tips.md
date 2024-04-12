@@ -1,3 +1,0 @@
-- Answer the question.
-- Be sure to define key terms at the beginning.
-- Evaluation involves quite a lot. Be sure to include discussion of objections from class (you can disagree with Professors assessment).
