@@ -3,6 +3,9 @@
 - [ ] CS 447 Lab 1 | <u>Due: 4/14</u>
 - [ ] CS 447 HW 1 | <u>Due: 4/14</u>
 - [ ] CS 405 HW 1 | <u>Due: 4/18</u>
+- [ ] CS 447 Article Assignment 1 | <u>Due: 4/18</u>
+	- ~30 minutes of time
+- [ ] 
 
 
 ### Readings:

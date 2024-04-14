@@ -79,3 +79,22 @@ bottomUpCutRod(p, n){
 		return r[n]
 }
 ```
+
+
+### Matrix Multiply
+```
+Matrix-Chain-Order(p, n){
+	init m[1:n, 1:n], s[1:(n-1), 2:n]
+	for i = 1..n
+		m[i,i] = 0
+	for l = 2..n                  // Chain Length: l
+		for i = 1..(n-l+1)        // Starting point: i
+			j = i+l-1
+			m[j] = inf
+			for k = i..(j-1)
+				q = m[i,j] + m[k+1, j] + p[i-1]*p[k]*p[j]
+				if q < m[i, j]
+					m[i,j] = q    // Remember cost
+					s[i,j] = k    // Remember split
+}
+```

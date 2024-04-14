@@ -8,31 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "87b4d31a3bb73d25",
+            "id": "6b542ddcff7a7462",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CSCI 447 Operating Systems/Processes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2482ee59a58dffc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
+                "file": "CSCI_447/homework1.pdf"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "CSCI_447/homework1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "CSCI_447/homework1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "CSCI_447/homework1.pdf"
               }
             }
           }
@@ -160,15 +145,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d2482ee59a58dffc",
+  "active": "6b542ddcff7a7462",
   "lastOpenFiles": [
-    "CSCI 405/Dynamic Programming.md",
     "CSCI 447 Operating Systems/Architecture Review.md",
-    "TODO.md",
-    "CSCI 405/CSCI 405.md",
+    "CSCI_447/Processes.md",
+    "CSCI_447/Operating Systems.md",
+    "CSCI_447/General Notes.md",
+    "CSCI_447/Architecture Review.md",
+    "CSCI_447",
+    "CSCI_405/Dynamic Programming.md",
+    "CSCI_405/CSCI 405.md",
+    "CSCI_405",
     "CSCI 447 Operating Systems/Processes.md",
     "CSCI 447 Operating Systems/General Notes.md",
     "CSCI 447 Operating Systems/Operating Systems.md",
+    "CSCI 405/Dynamic Programming.md",
+    "TODO.md",
+    "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md",
+    "Excalidraw",
+    "CSCI 405/CSCI 405.md",
     "CSCI 447 Operating Systems",
     "CSCI 405",
     "PHIL 112/CP Chart.md",
@@ -183,14 +178,6 @@
     "Excalidraw/Drawing 2024-02-13 13.11.56.excalidraw.md",
     "Excalidraw/Drawing 2024-03-05 13.49.54.excalidraw.md",
     "PHIL 112/Euthanasia.md",
-    "PHIL 112/Exam Tips.md",
-    "CSCI 367/Circuit Switching.md",
-    "PHIL 112/Argument Evaluation.md",
-    "PHIL 112/Ethical Relativism.md",
-    "PHIL 112/Divine Command Theory.md",
-    "PHIL 112/Arguments.md",
-    "PHIL 112/Argument Forms.md",
-    "Excalidraw",
     "PHIL 112",
     "CSCI 367",
     "CSCI 410"

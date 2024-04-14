@@ -33,3 +33,14 @@ Transitions:
 If a process has an interrupt, the OS saves the status of the process into it's PCB and then choose a waiting process and load it's PCB, and resume execution. 
 
 PCB's stored in __Ready Queue__
+
+# Process Scheduling
+There are multiple queues:
+- For I/O
+- File
+- Disk
+Steps:
+- Process creation involves reserving space for the PCB, assigning a PID, etc
+- Moved into ready queue
+- OS decides, assuming no prioritization sends whatever is first in queue to the CPU
+- After using the CPU, the process can move to I/O request queue, or Time is up, or fork child, or wait for interrupt, then the process reenters the ready queue
