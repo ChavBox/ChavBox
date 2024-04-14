@@ -1,6 +1,0 @@
-- Dial-up
-- DSL
-	- 
-- Cable/Fiber
-- Wireless
-- Direct Ethernet Access
