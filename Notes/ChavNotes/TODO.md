@@ -1,11 +1,19 @@
+__This Week:__
+- [x] CS 405 HW 1 | <u>Due: 4/18</u>
+- [x] CS 405 Quiz 1 | <u>Due: 4/18</u> (Open Notes, upto Rod Cut)
 
-- [ ] CS 405 Essay 1 | <u>Due: 4/11</u>
-- [ ] CS 447 Lab 1 | <u>Due: 4/14</u>
-- [ ] CS 447 HW 1 | <u>Due: 4/14</u>
-- [ ] CS 405 HW 1 | <u>Due: 4/18</u>
-- [ ] CS 447 Article Assignment 1 | <u>Due: 4/18</u>
+__This Week:__
+- [ ] CS 405 Essay 1 Revision | <u>Due: 4/23</u>
+
+__Next Weeks:__
+- [ ] CS 447 HW 2 | <u>Due: 4/28</u>
+- [ ] CS 447 Article Assignment 1 | <u>Due: 4/30</u>
 	- ~30 minutes of time
-- [ ] 
+- [ ] CS 405 HW 2 | <u>Due: 5/2</u> 
+- [ ] CS 405 Quiz 2 | <u>Due: 5/2</u>
+
+__Three Weeks:__
+- [ ] CS 405 Essay 2 | <u>Due: 5/7</u>
 
 
 ### Readings:

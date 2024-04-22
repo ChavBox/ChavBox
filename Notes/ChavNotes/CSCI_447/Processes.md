@@ -44,3 +44,22 @@ Steps:
 - Moved into ready queue
 - OS decides, assuming no prioritization sends whatever is first in queue to the CPU
 - After using the CPU, the process can move to I/O request queue, or Time is up, or fork child, or wait for interrupt, then the process reenters the ready queue
+
+
+## Interprocess Communication
+	Processes need to communicate when they need access to a shared resource, 
+	computational speedup, and modularity, two portions of a large system 
+	working together. 
+
+### Independence
+	To determine if two processes are independent, check to see if they have a  
+	shared resource. 
+	
+	Two processes are independent if the write set of each is disjoint from both 
+	the read and write sets of the other. 
+
+- Read set: set of vars read by a process
+- Write set: set of vars written to by a process
+
+It is safe for two or more process to read variables that do not change. However it is unsafe for two processes to write into the same variable or for a process to read from a variable that the other process has written to. 
+

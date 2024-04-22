@@ -98,3 +98,47 @@ Matrix-Chain-Order(p, n){
 					s[i,j] = k    // Remember split
 }
 ```
+
+
+## Optimal Substructure
+
+```
+c[i,j] = length of LCS of X_i + Y_j
+
+		   /          0                 if i = 0 or j = 0
+c[i, j] = {      1 + c[i-1, j-1]        if x_i = y_j and i,j > 0
+           \   c[i-1, j], c[i, j-1]     if x_i != y_j and i,j > 0
+
+
+
+```
+
+X = atom      Y = ant        Z = at
+
+### Dynamic Wrap-up
+
+optimal substructure:
+- can recursively compute optimal value
+- requires making choice (give max value)
+- showing solutions to subproblems must also be optimal
+	1. suppose subproblem is not optimal
+	2. cut it out
+	3. paste in what you think is optimal solution
+	4. show you get a better solution overall
+
+#### Number of subproblems:
+- rods: cuts 1, 2, ..., n
+- LCS: LCS of $(X_{m-1}, Y) or (X, Y_{n-1})$
+	- two choices
+	- one choice of endpoints are equal
+	- overall cost depends on both
+
+#### To solve:
+1) bottom-up:
+	- not recursive
+	- start from base case
+2) memoization:
+	-  recursive
+	- store in extra array
+
+
