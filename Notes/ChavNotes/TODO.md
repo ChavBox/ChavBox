@@ -1,17 +1,19 @@
 __This Week:__
-- [ ] CS 405 Essay 1 Revision | <u>Due: 4/23</u>
-- [ ] CS 447 HW 2 | <u>Due: 4/28</u>
-- [ ] CS 447 Article Assignment 1 | <u>Due: 4/30</u>
-	- ~30 minutes of time
-__Next Week:__
 - [ ] CS 405 HW 2 | <u>Due: 5/2</u> 
-- [ ] CS 405 Quiz 2 | <u>Due: 5/2</u>
+
+__Next Week:__
+- [ ] CS 405 Quiz 2 | <u>On: 5/7</u>
+- [ ] CS 405 Essay 2 | <u>Due: 5/7</u>
+- [ ] CS 447 Lab 3 | <u>Due: 5/12</u>
+- [ ] CS 447 Homework 3 | <u>Due: 5/12</u>
 
 __Two Weeks:__
-- [ ] CS 405 Essay 2 | <u>Due: 5/7</u>
+
 
 
 ### Readings:
+- [ ] Read activity selector greedy chapter
+- [ ] Read Huffman codes
 #### Week 1
 - [X] CS 447 | Ch. 1 Overview
 - [ ] CS 405 | Ch 9. Medians and Order Statistics

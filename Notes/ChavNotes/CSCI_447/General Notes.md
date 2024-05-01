@@ -17,5 +17,10 @@ About 1 ch per week
 - Chapter 2: [[Operating Systems]] 
 - Chapter 3: [[Processes]]
 - Chapter 4: [[Threads]]
+- Chapter 5: [[CPU Scheduling]]
+- Chapter 6: [[Synchronization Tools]]
+- Chapter 7: [[Synchronization Examples]]
+- Part 4: Memory Management
+	- [[Main Memory]]
 
 

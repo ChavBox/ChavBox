@@ -69,6 +69,8 @@ A solution to the critical section problem must satisfy 3 criteria
 	- If no process is executing and some process wants to enter its critical section, then only the processes NOT executing code in their other sections can decide who enters
 3. Bounded Waiting: 
 	- There must be a limit on the number of times that ANOTHER  process is allowed to enter its critical seciton after a processs has made a request to enter its critical section.
+[[Semaphores]]
+[[Monitors]]
 
 
 __Peterson's Solution:__
@@ -103,19 +105,4 @@ acquire(){
 release(){}
 ```
 
-### Semaphores
-	A semaphore is a data structure that permits threads to coordinate among 
-	each other and specify which thread(s) wait and which threads execute. 
-	Invented by Edsger Dijkstra (for CS applications).
-- Serialization: Event A must happen before Event B
-- Mutual Exclusion: Events A and B must NOT happen at the same time.
-- Concurrent: 
 
-Contains only a single non-negative integer as a datum
-The integer can be initialized to any non-negative value, but once declared and set, it is modified only by several methods (there are no direct setter and getter methods)
-1. Increment (V)
-	- If increment occurs, an <u>already</u> waiting thread is unblocked. (waking)
-2. Decrement (P)
-	- If decrement would result in the datum being negative, then the thread that issued the decrement will be blocked and will not continue until ANOTHER thread increments the semaphore. 
-
-x`
