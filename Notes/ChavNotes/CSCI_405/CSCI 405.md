@@ -77,3 +77,13 @@ Average Case: T(n) time to solve random var.
 - $E[T(n)] = f(n) \leq \frac{2}{n} \Sigma^{n-1}_{{k = \lfloor \frac{n}{2} \rfloor}} f(k) + O(n)$
 - Can use substitution to get $f(n) \leq c * n$
 - $E[T(n)] \leq O(n)$
+
+
+# Homework 2 
+Q2: $r_n = max_{k=1..n}{v_k+r_{n-k}}$ 
+# UPCOMING QUIZ TOPICS
+- Do DFS by hand
+- Know graph data structures
+- Look over solution provided worksheets
+- Dynamic Programming
+- 

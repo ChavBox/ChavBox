@@ -15,3 +15,15 @@ G = (v, e) unweighted & directed
 	gray: discovered, not finished
 	black: finished exploring
 V is a descendant of u <=> at time u.d there is a path from u -> v containing only white nodes
+
+## Strongly Connected Components
+```
+G = (V, E)
+G^t = transposed graph
+SCC(G):
+	DFS(G) compute v.f forAll v in V
+	create G^t
+	DFS(G^t) // in main loop call DFS-visit(G^t, u) in decreasing u.f order
+	vertices in disjoin trees make up components
+```
+$\Theta(V+E)$ 
