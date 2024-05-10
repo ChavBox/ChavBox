@@ -1,13 +1,13 @@
 __This Week:__
-- [ ] CS 405 Quiz 2 | <u>On: 5/7</u>
-- [ ] CS 405 Essay 2 | <u>Due: 5/7</u>
-- [ ] CS 447 Lab 3 | <u>Due: 5/12</u>
+- [ ] CS 405 Essay 2 | <u>Due: 5/8</u>
+- [x] CS 447 Lab 3 | <u>Due: 5/12</u>
 - [ ] CS 447 Homework 3 | <u>Due: 5/12</u>
 
 __Next Week:__
 - [ ] CS 447 MIDTERM | <u>Due: 5/17</u>
 	- 10-15 True False, Multiple Choice, multiple answers, short answer, 2-3 work through problems
 	- 1 extra credit for "sample" midterm question (TF, Multiple Choice, Short Answer)
+- [ ] CS 405 HW 3 | <u>Due: 5/17</u>
 
 __Two Weeks:__
 

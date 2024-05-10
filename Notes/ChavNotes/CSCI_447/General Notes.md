@@ -13,14 +13,19 @@
 About 1 ch per week
 
 ## Lectures:
-- Chapter 1: [[Architecture Review]]
-- Chapter 2: [[Operating Systems]] 
-- Chapter 3: [[Processes]]
-- Chapter 4: [[Threads]]
-- Chapter 5: [[CPU Scheduling]]
-- Chapter 6: [[Synchronization Tools]]
-- Chapter 7: [[Synchronization Examples]]
+- Part 1: Overview
+	- Chapter 1: [[Architecture Review]]
+	- Chapter 2: [[Operating Systems]] 
+- Part 2: Process Management
+	- Chapter 3: [[Processes]]
+	- Chapter 4: [[Threads]]
+	- Chapter 5: [[CPU Scheduling]]
+- Part 3: Process Synchronization
+	- Chapter 6: [[Synchronization Tools]]
+	- Chapter 7: [[Synchronization Examples]]
+	- Chapter 8: [[Deadlocks]]
 - Part 4: Memory Management
-	- [[Main Memory]]
+	- Chapter 9: [[Main Memory]]
+	- Chapter 10: [[Virtual Memory]]
 
 
