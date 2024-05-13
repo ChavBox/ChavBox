@@ -11,9 +11,11 @@
             "id": "a05f7fe02e9a1ae7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CSCI_447/Homework/homework3.pdf"
+                "file": "CSCI_447/Virtual Memory.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSCI_447/Homework/homework3.pdf",
+                "file": "CSCI_447/Virtual Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSCI_447/Homework/homework3.pdf",
+                "file": "CSCI_447/Virtual Memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSCI_447/Homework/homework3.pdf"
+                "file": "CSCI_447/Virtual Memory.md"
               }
             }
           }
@@ -147,6 +149,10 @@
   },
   "active": "a05f7fe02e9a1ae7",
   "lastOpenFiles": [
+    "CSCI_447/Homework/Simulation.md",
+    "CSCI_447/Virtual Memory.md",
+    "CSCI_447/Homework/Homework 3.md",
+    "CSCI_447/Homework/homework3.pdf",
     "CSCI_405/HW 3 Stuff.md",
     "CSCI_405/hw3-1.pdf",
     "CSCI_405/Quiz 2 stuff/405_notes.pdf",
@@ -156,9 +162,6 @@
     "CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
     "CSCI_447/General Notes.md",
     "CSCI_405/hw2.pdf",
-    "CSCI_447/Homework/homework3.pdf",
-    "CSCI_447/Homework/Homework 3.md",
-    "CSCI_447/Virtual Memory.md",
     "CSCI_447/Homework",
     "CSCI_405/Quiz 2 stuff/DFS-graphs.pdf",
     "CSCI_405/Minimum Spanning Trees (MST).md",
