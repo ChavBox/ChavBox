@@ -1,16 +1,18 @@
 __This Week:__
-- [ ] CS 405 Essay 2 | <u>Due: 5/8</u>
-- [x] CS 447 Lab 3 | <u>Due: 5/12</u>
-- [ ] CS 447 Homework 3 | <u>Due: 5/12</u>
+- [ ] CS 447 Homework 3 | <u>Due: 5/14</u>
+	- [x] Written Questions
+	- [ ] Coding Portion
+- [ ] CS 405 5/9 Worksheet | <u>Due: 5/14</u>
+- [ ] CS 447 Midterm Sample Question | <u>Due: 5/15</u>
+- [ ] CS 405 HW 3 | <u>Due: 5/16</u>
+- [ ] CS 447 Article Summary | <u>Due: 5/17</u>
+
+- [ ] CS 447 MIDTERM | <u>ON: 5/17</u>
+	- 10-15 True False, Multiple Choice, multiple answers, short answer, 2-3 work through problems
 
 __Next Week:__
-- [ ] CS 447 MIDTERM | <u>Due: 5/17</u>
-	- 10-15 True False, Multiple Choice, multiple answers, short answer, 2-3 work through problems
-	- 1 extra credit for "sample" midterm question (TF, Multiple Choice, Short Answer)
-- [ ] CS 405 HW 3 | <u>Due: 5/17</u>
-
-__Two Weeks:__
-
+- [ ] CS 405 Quiz 3 | <u>ON: 5/20</u>
+- [ ] CS 405 Essay 2 Revision | <u>Due: 5/21</u>
 ### Readings:
 - [ ] Read activity selector greedy chapter
 - [ ] Read Huffman codes
