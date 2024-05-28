@@ -59,7 +59,7 @@ Two processes may share a page table when they are the same executable
 
 #### Inverted Page Table
 	a single page table regardless of how many processes there are
-- three tuple (pid, p, d) 
+- three tuple (pid, p, d) ?? (2-tuple: pid, p)
 	- pid: process ID
 	- p: index into table
 	- d: offset into frame
@@ -80,3 +80,23 @@ Benifits:
 - Less I/O required to swap user programs
 ## HOW?
 Just before a page is needed, the OS will swap it into the Physical Memory from the Secondary Storage Device (Hard Drive/SSD)
+
+- Valid/invalid bit also refers to if the frame is in physical memory
+- If a requested address is invalid, the OS traps the address and throws a page fault
+	- If the requested addres is in the process's logical address space, the OS terminates the process
+
+### Memory Speed
+Miliseconds (HD/Memory)
+Microseconds (Cache/Register)
+Nanoseconds (ALU)
+# Swapping from HD to Physical Memory
+#### Effective access time
+	2 processes A, B
+- Probability of A to page <u>fault</u> (p) = 0.4
+- Probability of B to page <u>fault</u> (p) = 0.3 (Probability to page hit 1-p)
+- Time cost of page fault (fault): 5 miliseconds
+- Time cost of memroy access (ma): 300 nanoseconds
+- How much more is the effective access time of process A vs process B?
+### Effective Access Time = $(1-p)ma + p(fault)$ 
+
+## [[Page Replacement]]

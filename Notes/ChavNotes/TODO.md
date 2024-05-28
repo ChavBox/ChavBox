@@ -1,16 +1,21 @@
 __This Week:__
-- [ ] CS 405 Essay 2 | <u>Due: 5/8</u>
-- [x] CS 447 Lab 3 | <u>Due: 5/12</u>
-- [ ] CS 447 Homework 3 | <u>Due: 5/12</u>
-
-__Next Week:__
-- [ ] CS 447 MIDTERM | <u>Due: 5/17</u>
-	- 10-15 True False, Multiple Choice, multiple answers, short answer, 2-3 work through problems
-	- 1 extra credit for "sample" midterm question (TF, Multiple Choice, Short Answer)
-- [ ] CS 405 HW 3 | <u>Due: 5/17</u>
-
+- [ ] 
+__Next Week:__ 
+- [ ] CS 405 Essay 3 | <u>Due: 5/29</u>
+	- [ ] Read articles
+	- [ ] Build thesis
+	- [ ] Create topic sentences
+	- [ ] Organize collected quotes/citations
+	- [ ] Expand body paragraphs
+	- [ ] Expand intro
+	- [ ] Write conclusion
+	- [ ] Proof-read rough draft
+	- [ ] Finalize with feedback
+- [ ] CS 447 Written Homework | <u>Due: 5/31</u>
+- [ ] CS 447 Coding Homework | <u>Due: 5/31</u>
+- [ ] CS 447 Lab 4 | <u>Due: 5/31</u>
 __Two Weeks:__
-
+- [ ] CS 405 Homework 4
 ### Readings:
 - [ ] Read activity selector greedy chapter
 - [ ] Read Huffman codes
@@ -44,3 +49,5 @@ __Two Weeks:__
 #### Week 10
 - [ ] CS 447 | 
 - [ ] CH 405 | 
+
+
