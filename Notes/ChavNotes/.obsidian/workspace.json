@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "63d757b7d27ababf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSCI_447/Storage Management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -147,10 +160,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c2d301f8d6e7d441",
+  "active": "63d757b7d27ababf",
   "lastOpenFiles": [
-    "TODO.md",
+    "Excalidraw/diskArmTimingDiagram.md",
     "CSCI_447/Storage Management.md",
+    "TODO.md",
     "CSCI_447/Frame Allocation.md",
     "CSCI_447/Page Replacement.md",
     "CSCI_447/Virtual Memory.md",
@@ -183,7 +197,6 @@
     "CSCI_405/Homework 1.md",
     "ESO Presentation.md",
     "CSCI_447/Monitors.md",
-    "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md",
-    "CSCI_447/Threads.md"
+    "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md"
   ]
 }
