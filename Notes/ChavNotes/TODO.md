@@ -2,8 +2,8 @@ __This Week:__
 - [ ] 
 __Next Week:__ 
 - [ ] CS 405 Essay 3 | <u>Due: 5/29</u>
-	- [ ] Read articles
-	- [ ] Build thesis
+	- [x] Read articles
+	- [x] Build thesis
 	- [ ] Create topic sentences
 	- [ ] Organize collected quotes/citations
 	- [ ] Expand body paragraphs
