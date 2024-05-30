@@ -11,9 +11,10 @@ What is a process?
 
 Process States:
 - New: being created
+- Ready: process is waiting to be assigned a processor
 - Running: being executed
 - Waiting: for some event to occur
-- Ready: process is waiting to be assigned a processor
+
 - Terminated: finished executing
 
 Transitions:
