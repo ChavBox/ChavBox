@@ -4,16 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "37e9a70b51477986",
+        "id": "2a5770d049bf54bd",
         "type": "tabs",
         "children": [
           {
-            "id": "f9ffa031dd20d02e",
+            "id": "efc34618e6925189",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/Simulation.md"
+                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "80cda9c99a0fd381",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6e7d0fd79cfee77",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf"
               }
             }
           }
@@ -67,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "4948abd230129e6c",
@@ -83,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/Simulation.md",
+                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/Simulation.md",
+                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/Simulation.md"
+                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf"
               }
             }
           }
@@ -150,20 +167,20 @@
     "type": "floating",
     "children": [
       {
-        "id": "f0cb4a2ffc7c462f",
+        "id": "253723ec51e13a1e",
         "type": "window",
         "children": [
           {
-            "id": "750197bf0a9f058a",
+            "id": "a292de54ef85b605",
             "type": "tabs",
             "children": [
               {
-                "id": "9dd6a2975103109e",
+                "id": "1623182d24fac536",
                 "type": "leaf",
                 "state": {
-                  "type": "pdf",
+                  "type": "excalidraw",
                   "state": {
-                    "file": "ChavNotes/CSCI_447/Homework/homework3.pdf"
+                    "file": "Excalidraw/Drawing 2024-05-14 20.40.33.excalidraw.md"
                   }
                 }
               }
@@ -171,22 +188,26 @@
           }
         ],
         "direction": "vertical",
-        "x": 576,
-        "y": 606,
-        "width": 600,
-        "height": 760,
+        "x": 431,
+        "y": 615,
+        "width": 818,
+        "height": 600,
         "maximize": true,
         "zoom": 0
       }
     ]
   },
-  "active": "d737de638e7b9acf",
+  "active": "efc34618e6925189",
   "lastOpenFiles": [
+    "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
     "ChavNotes/CSCI_447/Homework/homework3.pdf",
+    "Excalidraw/Drawing 2024-05-14 20.40.33.excalidraw.md",
+    "ChavNotes/CSCI_447/Processes.md",
     "ChavNotes/CSCI_447/Homework/Simulation.md",
+    "Untitled.canvas",
+    "ChavNotes/TODO.md",
     "Excalidraw/Template.md",
     "Excalidraw/Drawing 2024-05-11 19.54.55.excalidraw.md",
-    "Excalidraw",
-    "Untitled.canvas"
+    "Excalidraw"
   ]
 }
