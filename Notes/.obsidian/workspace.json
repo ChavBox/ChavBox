@@ -4,36 +4,83 @@
     "type": "split",
     "children": [
       {
-        "id": "2a5770d049bf54bd",
+        "id": "fe5c9aef055203f7",
         "type": "tabs",
         "children": [
           {
-            "id": "efc34618e6925189",
+            "id": "d34280fba50c71f5",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf"
+                "file": "ChavNotes/CSCI_405/Essay_3/essay3.pdf"
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "80cda9c99a0fd381",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "b6e7d0fd79cfee77",
+            "id": "15978ca7494ca21c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a7435a595ea3f444",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf"
+                "file": "ChavNotes/CSCI_405/essayRubric.pdf"
+              }
+            }
+          },
+          {
+            "id": "cff33ec33c33853f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ChavNotes/CSCI_405/Essay_3/FOX-article.pdf"
+              }
+            }
+          },
+          {
+            "id": "57f6d1d127f6cc62",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ChavNotes/CSCI_405/Essay_3/NYT-article.pdf"
+              }
+            }
+          },
+          {
+            "id": "c03aca2f349d7d64",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ChavNotes/CSCI_405/Essay_3/researchPaper.pdf"
+              }
+            }
+          },
+          {
+            "id": "a02ea3e8f2dafc78",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ChavNotes/CSCI_405/Essay_3/researchSupplement.pdf"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4948abd230129e6c",
@@ -100,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf",
+                "file": "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf",
+                "file": "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/homework3.pdf"
+                "file": "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md"
               }
             }
           }
@@ -162,52 +208,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "floating": {
-    "id": "fcbf982f6a606ab7",
-    "type": "floating",
-    "children": [
-      {
-        "id": "253723ec51e13a1e",
-        "type": "window",
-        "children": [
-          {
-            "id": "a292de54ef85b605",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1623182d24fac536",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/Drawing 2024-05-14 20.40.33.excalidraw.md"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 431,
-        "y": 615,
-        "width": 818,
-        "height": 600,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "efc34618e6925189",
+  "active": "d737de638e7b9acf",
   "lastOpenFiles": [
+    "ChavNotes/CSCI_405/essayRubric.pdf",
+    "ChavNotes/CSCI_405/Essay_3/FOX-article.pdf",
+    "ChavNotes/CSCI_405/Essay_3/NYT-article.pdf",
+    "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
+    "ChavNotes/CSCI_405/Essay_3/essay3.pdf",
+    "ChavNotes/TODO.md",
+    "ChavNotes/CSCI_405/Essay_3/researchPaper.pdf",
+    "ChavNotes/CSCI_405/Essay_3/researchSupplement.pdf",
+    "ChavNotes/ESO Presentation.md",
+    "ChavNotes/CSCI_405/hw3-1.pdf",
+    "ChavNotes/CSCI_405/Quiz 2 stuff/405_notes.pdf",
+    "Excalidraw/Drawing 2024-05-14 20.40.33.excalidraw.md",
     "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
     "ChavNotes/CSCI_447/Homework/homework3.pdf",
-    "Excalidraw/Drawing 2024-05-14 20.40.33.excalidraw.md",
     "ChavNotes/CSCI_447/Processes.md",
     "ChavNotes/CSCI_447/Homework/Simulation.md",
     "Untitled.canvas",
-    "ChavNotes/TODO.md",
     "Excalidraw/Template.md",
-    "Excalidraw/Drawing 2024-05-11 19.54.55.excalidraw.md",
-    "Excalidraw"
+    "Excalidraw/Drawing 2024-05-11 19.54.55.excalidraw.md"
   ]
 }
