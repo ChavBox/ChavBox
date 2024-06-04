@@ -3,6 +3,8 @@
 
 Cylinders on the disk are like rings, and are indexed starting from outside of disk going inwards, outer cylinder is #0, and the inner most is the max # of cylinders. 
 
+Counting cylinder movement
+
 We want to <u>minimize</u> the number of times the arms of the disk have to <u>stop their movement and go in the opposite direction.</u>
 
 ## Scheduling Algorithms
@@ -17,6 +19,32 @@ We want to <u>minimize</u> the number of times the arms of the disk have to <u>s
 ##### LOOK 
 	Proceed in direction at start, go to "maximum" request in that direction, then reverse, and perform reads as continuing towards maximum "other" direction.
 
+## Disk Scheduling
+Requests for disk reads come in at varying times, the above algorithms that can cause starvation:
+- SSTF
+## RAID
+	Redundant Arrays of Independent Disks
+We cannot assume disk failures are independent, factors such as power outages would affect both disks. 
+
+Stripping: Splitting portions of a byte among two disks
+
+Mirroring: Duplicate data between two or more drives.
+
+**What is the mean time of failure of some disk in a 100 disk array?**
+100,000/100 = 1000 = ~40 days
+
+### Redundancy Mirroring
+	Write data to duplicate disks
+A byte could be split up among two disks, with the first 4 bits stored in disk A and the other 4 in disk B. 
+
+Raid 0: Stripping but no mirroring
+Raid 1: Mirroring but no stripping
+Raid 2: Stripping, no mirroring, but use of parity bits
+
+**Byte Parity**: 
+- If number of bits (1's) is even, parity = 0
+- If number of bits (1's) is odd, parity = 1
+- Parity of each byte segment is saved, [[parity venn diagram]]
 # Example Questions
 1. Assume the following page requests by process $i$ left to right \[Answers TBD]:
 43   78   32 |  32   43 |  32   12   34 |  78   65   43   78 |  32   78 |

@@ -58,7 +58,7 @@ Savage, C. (2024). _Takeaways From the Supreme Court Arguments on Social Media L
 # Source 3: Research Paper
 	Algorithmic amplification of politics on Twitter
 __Citation__
-Huszár, F., Ktena, S., O'Brien, C., Belli, L., Schlaikjer, A., Hardt, M., & Laitin, D. (2021)
+Huszár, F., Ktena, S., O'Brien, C., Belli, L., Schlaikjer, A., Hardt, M., & Laitin, D. (2021). 	Algorithmic amplification of politics on Twitter. Stanford University
 
 
 - Algorithms in Social Media:

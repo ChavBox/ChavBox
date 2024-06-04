@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "40bd64365f55b6ca",
+        "id": "169e5bb4bfe75ca8",
         "type": "tabs",
         "children": [
           {
-            "id": "c2d301f8d6e7d441",
+            "id": "ff8b7844fc185446",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CSCI_447/Storage Management.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "63d757b7d27ababf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
+                "file": "CSCI_447/Homework/HW_4/homework4.pdf"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "CSCI_447/Homework/HW_4/homework4.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "CSCI_447/Homework/HW_4/homework4.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "CSCI_447/Homework/HW_4/homework4.pdf"
               }
             }
           }
@@ -160,31 +145,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "63d757b7d27ababf",
+  "active": "ff8b7844fc185446",
   "lastOpenFiles": [
+    "CSCI_447/Homework/HW_4/Homework 4.md",
+    "CSCI_447/Homework/HW_4/homework4.pdf",
+    "CSCI_447/Homework/HW_4",
     "CSCI_447/Storage Management.md",
+    "Excalidraw/parity venn diagram.md",
+    "CSCI_447/Homework/homework1.pdf",
+    "CSCI_447/Homework/homework2.pdf",
+    "CSCI_447/Homework/homework3.pdf",
+    "CSCI_405/Essay_3/FOX-article.pdf",
+    "CSCI_405/Essay_3/NYT-article.pdf",
+    "CSCI_405/Essay_3/Essay3Notes.md",
+    "CSCI_405/Essay_3/researchSupplement.pdf",
+    "CSCI_405/Essay_3/researchPaper.pdf",
+    "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md",
     "Excalidraw/diskArmTimingDiagram.md",
+    "CSCI_405/Essay_3/Essay 3 Notes.md",
+    "CSCI_405/Quiz2/405_notes.pdf",
     "TODO.md",
     "CSCI_447/Frame Allocation.md",
     "CSCI_447/Page Replacement.md",
     "CSCI_447/Virtual Memory.md",
-    "CSCI_447/Homework/Homework 4.md",
-    "CSCI_405/Essay_3/Essay 3 Notes.md",
-    "CSCI_405/Essay_3/FOX-article.pdf",
-    "CSCI_405/Essay_3/NYT-article.pdf",
-    "CSCI_405/Essay_3/researchPaper.pdf",
-    "CSCI_405/Essay_3/essay3.pdf",
     "CSCI_405/CSCI 405.md",
-    "CSCI_405/Essay_3/researchSupplement.pdf",
-    "CSCI_405/essayRubric.pdf",
     "CSCI_405/Graphs.md",
     "CSCI_405/Dynamic Programming.md",
     "CSCI_405/HW 3 Stuff.md",
     "CSCI_405/Minimum Spanning Trees (MST).md",
-    "CSCI_405/Essay_3",
-    "CSCI_405/Quiz3/singleSourcePath.pdf",
-    "CSCI_405/Quiz3/shortestPathAlgs.pdf",
-    "CSCI_405/Quiz3/shortestPathExersize.pdf",
     "CSCI_447/Processes.md",
     "CSCI_447/Operating Systems.md",
     "CSCI_447/Architecture Review.md",
@@ -193,10 +181,6 @@
     "CSCI_447/Homework/Simulation.md",
     "CSCI_447/General Notes.md",
     "CSCI_447/Main Memory.md",
-    "CSCI_447/CPU Scheduling.md",
-    "CSCI_405/Homework 1.md",
-    "ESO Presentation.md",
-    "CSCI_447/Monitors.md",
-    "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md"
+    "CSCI_447/CPU Scheduling.md"
   ]
 }
