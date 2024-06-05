@@ -11,13 +11,28 @@
             "id": "ff8b7844fc185446",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "CSCI_447/Homework/HW_4/homework4.pdf"
+                "file": "CSCI_447/Storage Management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a2304d8b1de3ffd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "File System Implementation.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSCI_447/Homework/HW_4/homework4.pdf",
+                "file": "File System Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSCI_447/Homework/HW_4/homework4.pdf",
+                "file": "File System Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSCI_447/Homework/HW_4/homework4.pdf"
+                "file": "File System Implementation.md"
               }
             }
           }
@@ -145,12 +160,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ff8b7844fc185446",
+  "active": "a2304d8b1de3ffd5",
   "lastOpenFiles": [
-    "CSCI_447/Homework/HW_4/Homework 4.md",
-    "CSCI_447/Homework/HW_4/homework4.pdf",
-    "CSCI_447/Homework/HW_4",
     "CSCI_447/Storage Management.md",
+    "File System Implementation.md",
+    "CSCI_447/Homework/HW_4/homework4.pdf",
+    "CSCI_447/Homework/HW_4/Homework 4.md",
+    "CSCI_447/Homework/HW_4",
     "Excalidraw/parity venn diagram.md",
     "CSCI_447/Homework/homework1.pdf",
     "CSCI_447/Homework/homework2.pdf",
