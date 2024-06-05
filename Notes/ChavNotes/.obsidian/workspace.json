@@ -23,11 +23,9 @@
             "id": "a2304d8b1de3ffd5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "File System Implementation.md",
-                "mode": "source",
-                "source": false
+                "file": "CSCI_447/Homework/hw5.pdf"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File System Implementation.md",
+                "file": "CSCI_447/Homework/hw5.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File System Implementation.md",
+                "file": "CSCI_447/Homework/hw5.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File System Implementation.md"
+                "file": "CSCI_447/Homework/hw5.pdf"
               }
             }
           }
@@ -162,15 +160,17 @@
   },
   "active": "a2304d8b1de3ffd5",
   "lastOpenFiles": [
-    "CSCI_447/Storage Management.md",
-    "File System Implementation.md",
-    "CSCI_447/Homework/HW_4/homework4.pdf",
+    "CSCI_447/Homework/hw4.pdf",
+    "CSCI_447/Homework/hw5.pdf",
+    "CSCI_447/Homework/hw3.pdf",
     "CSCI_447/Homework/HW_4/Homework 4.md",
+    "CSCI_447/Homework/Homework 3.md",
+    "CSCI_447/Homework/hw2.pdf",
+    "CSCI_447/Homework/hw1.pdf",
+    "File System Implementation.md",
+    "CSCI_447/Storage Management.md",
     "CSCI_447/Homework/HW_4",
     "Excalidraw/parity venn diagram.md",
-    "CSCI_447/Homework/homework1.pdf",
-    "CSCI_447/Homework/homework2.pdf",
-    "CSCI_447/Homework/homework3.pdf",
     "CSCI_405/Essay_3/FOX-article.pdf",
     "CSCI_405/Essay_3/NYT-article.pdf",
     "CSCI_405/Essay_3/Essay3Notes.md",
@@ -193,10 +193,8 @@
     "CSCI_447/Operating Systems.md",
     "CSCI_447/Architecture Review.md",
     "CSCI_447/Semaphores.md",
-    "CSCI_447/Homework/Homework 3.md",
     "CSCI_447/Homework/Simulation.md",
     "CSCI_447/General Notes.md",
-    "CSCI_447/Main Memory.md",
-    "CSCI_447/CPU Scheduling.md"
+    "CSCI_447/Main Memory.md"
   ]
 }
