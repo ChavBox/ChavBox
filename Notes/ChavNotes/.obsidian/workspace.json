@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HW 4.md",
+                "file": "CSCI_447/FINAL REVIEW.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HW 4.md",
+                "file": "CSCI_447/FINAL REVIEW.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HW 4.md",
+                "file": "CSCI_447/FINAL REVIEW.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HW 4.md"
+                "file": "CSCI_447/FINAL REVIEW.md"
               }
             }
           }
@@ -149,10 +149,12 @@
   },
   "active": "b79494a9c1447592",
   "lastOpenFiles": [
-    "CSCI_405/hw4.pdf",
-    "HW 4.md",
-    "CSCI_447/Storage Management.md",
     "CSCI_447/Homework/hw5.pdf",
+    "CSCI_447/FINAL REVIEW.md",
+    "CSCI_447/Homework/reading2.pdf",
+    "HW 4.md",
+    "CSCI_405/hw4.pdf",
+    "CSCI_447/Storage Management.md",
     "CSCI_447/Homework/hw4.pdf",
     "CSCI_447/Homework/hw3.pdf",
     "CSCI_447/Homework/HW_4/Homework 4.md",
@@ -165,7 +167,6 @@
     "CSCI_405/Essay_3/FOX-article.pdf",
     "CSCI_405/Essay_3/NYT-article.pdf",
     "CSCI_405/Essay_3/Essay3Notes.md",
-    "CSCI_405/Essay_3/researchSupplement.pdf",
     "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md",
     "Excalidraw/diskArmTimingDiagram.md",
     "CSCI_405/Essay_3/Essay 3 Notes.md",
@@ -182,7 +183,6 @@
     "CSCI_447/Operating Systems.md",
     "CSCI_447/Architecture Review.md",
     "CSCI_447/Semaphores.md",
-    "CSCI_447/Homework/Simulation.md",
-    "CSCI_447/General Notes.md"
+    "CSCI_447/Homework/Simulation.md"
   ]
 }
