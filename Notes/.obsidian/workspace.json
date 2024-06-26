@@ -11,23 +11,40 @@
             "id": "15978ca7494ca21c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/HW_4/homework4.pdf"
+                "file": "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
           {
-            "id": "c0e90e42bbbf0a7e",
+            "id": "bc988d434b3675c9",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf"
+                "file": "ChavNotes/CS_321-GameProgramming/Unity Fundamentals.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c643ef38efb8bf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ChavNotes/TODO.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/HW_4/homework4.pdf",
+                "file": "ChavNotes/TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/HW_4/homework4.pdf",
+                "file": "ChavNotes/TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ChavNotes/CSCI_447/Homework/HW_4/homework4.pdf"
+                "file": "ChavNotes/TODO.md"
               }
             }
           }
@@ -155,65 +172,44 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "floating": {
-    "id": "a607670b141ef7c7",
-    "type": "floating",
-    "children": [
-      {
-        "id": "fb19828851d4988e",
-        "type": "window",
-        "children": [
-          {
-            "id": "bc7892f015afe93f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "45eea411294f888a",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/Drawing 2024-06-03 21.59.06.excalidraw.md"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 887,
-        "y": 700,
-        "width": 1336,
-        "height": 1010,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "15978ca7494ca21c",
+  "active": "5c643ef38efb8bf4",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-06-03 21.59.06.excalidraw.md",
-    "ChavNotes/CSCI_447/Homework/HW_4/homework4.pdf",
-    "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
-    "Excalidraw/Drawing 2024-06-03 21.57.32.excalidraw.md",
-    "ChavNotes/CSCI_405/Essay_3/essay3.pdf",
+    "ChavNotes/HW 4.md",
+    "ChavNotes/File System Implementation.md",
     "ChavNotes/Excalidraw/parity venn diagram.md",
-    "ChavNotes/CSCI_447/Homework/HW_4/Homework 4.md",
-    "ChavNotes/CSCI_447/Homework/HW_4",
-    "ChavNotes/CSCI_405/essayRubric.pdf",
-    "ChavNotes/CSCI_405/Essay_3/FOX-article.pdf",
-    "ChavNotes/CSCI_405/Essay_3/NYT-article.pdf",
-    "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
-    "ChavNotes/TODO.md",
-    "ChavNotes/CSCI_405/Essay_3/researchPaper.pdf",
-    "ChavNotes/CSCI_405/Essay_3/researchSupplement.pdf",
-    "ChavNotes/ESO Presentation.md",
-    "ChavNotes/CSCI_405/hw3-1.pdf",
-    "Excalidraw/Drawing 2024-05-14 20.40.33.excalidraw.md",
+    "ChavNotes/Excalidraw/diskArmTimingDiagram.md",
+    "ChavNotes/Excalidraw",
+    "ChavNotes/CSCI_447/Virtual Memory.md",
+    "ChavNotes/CSCI_447/Threads.md",
+    "ChavNotes/CSCI_447/Storage Management.md",
+    "ChavNotes/CSCI_447/Semaphores.md",
     "ChavNotes/CSCI_447/Processes.md",
-    "ChavNotes/CSCI_447/Homework/Simulation.md",
-    "Untitled.canvas",
-    "Excalidraw/Template.md",
-    "Excalidraw/Drawing 2024-05-11 19.54.55.excalidraw.md"
+    "ChavNotes/CSCI_447/Page Replacement.md",
+    "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
+    "ChavNotes/CSCI_447/Operating Systems.md",
+    "ChavNotes/CSCI_447/Monitors.md",
+    "ChavNotes/CSCI_447/Main Memory.md",
+    "ChavNotes/CSCI_447/Homework/reading2.pdf",
+    "ChavNotes/CSCI_447/Homework/hw5.pdf",
+    "ChavNotes/CSCI_447/Homework/hw4.pdf",
+    "ChavNotes/CSCI_447/Homework/hw3.pdf",
+    "ChavNotes/CSCI_447/Homework/hw2.pdf",
+    "ChavNotes/CSCI_447/Homework/hw1.pdf",
+    "ChavNotes/CSCI_447/Homework",
+    "ChavNotes/CSCI_447/General Notes.md",
+    "ChavNotes/CSCI_447/Frame Allocation.md",
+    "ChavNotes/CSCI_447/FINAL REVIEW.md",
+    "ChavNotes/CSCI_447/CPU Scheduling.md",
+    "ChavNotes/CSCI_447/Architecture Review.md",
+    "ChavNotes/CSCI_447",
+    "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
+    "ChavNotes/CSCI_405/CSCI 405.md",
+    "ChavNotes/CS_321-GameProgramming/Unity Fundamentals.md",
+    "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
+    "ChavNotes/TODO.md",
+    "ChavNotes/CS_321-GameProgramming/Scripting Basics.md",
+    "ChavNotes/CS_321-GameProgramming/Intro Lecture.md",
+    "Excalidraw/diskArmTimingDiagram.md",
+    "Untitled.canvas"
   ]
 }
