@@ -11,7 +11,11 @@ We want to <u>minimize</u> the number of times the arms of the disk have to <u>s
 ##### FCFS
 	Retrieve the data in the order it is asked for
 ##### SSTF
+<<<<<<< HEAD
 	 Select the request with the shortest seek time from the current position 
+=======
+	 Select the request with the shortest seek time from the current position
+>>>>>>> 22f5ecade4d786c0914ff6f8ed485656f2542afd
 ##### SCAN
 	Full back and forth, reading during both swings
 ##### C-SCAN
