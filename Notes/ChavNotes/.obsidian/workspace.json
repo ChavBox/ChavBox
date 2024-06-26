@@ -149,6 +149,11 @@
   },
   "active": "1c63e164bc66fc56",
   "lastOpenFiles": [
+    "CS_321-GameProgramming/Unity Fundamentals.md",
+    "CS_321-GameProgramming/Scripting Basics.md",
+    "CS_321-GameProgramming/Intro Lecture.md",
+    "CS_321-GameProgramming/Game Ideas.md",
+    "CS_321-GameProgramming",
     "ESO Presentation.md",
     "HW 4.md",
     "File System Implementation.md",
@@ -168,7 +173,6 @@
     "CSCI_447/Homework/hw3.pdf",
     "CSCI_447/Homework/HW_4/Homework 4.md",
     "CSCI_447/Homework/Homework 3.md",
-    "CSCI_447/Homework/hw2.pdf",
     "Excalidraw/parity venn diagram.md",
     "CSCI_405/Essay_3/Essay3Notes.md",
     "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md",
@@ -182,10 +186,6 @@
     "CSCI_405/Graphs.md",
     "CSCI_405/Dynamic Programming.md",
     "CSCI_405/HW 3 Stuff.md",
-    "CSCI_405/Minimum Spanning Trees (MST).md",
-    "CSCI_447/Processes.md",
-    "CSCI_447/Operating Systems.md",
-    "CSCI_447/Architecture Review.md",
-    "CSCI_447/Semaphores.md"
+    "CSCI_405/Minimum Spanning Trees (MST).md"
   ]
 }
