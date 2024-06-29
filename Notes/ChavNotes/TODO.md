@@ -1,7 +1,7 @@
 # Week 1
-- [ ] Unity Fundamentals Video | <u>Due: 6/25</u>
+- [x] Unity Fundamentals Video | <u>Due: 6/25</u>
 - [ ] The 3rd Dimension Video | <u>Due: 6/25</u>
-- [ ] Looking for group discussion | <u>Due: 6/26</u>
+- [x] Looking for group discussion | <u>Due: 6/26</u>
 - [ ] C# scripting basics Video 1 | <u>Due: 6/26</u>
 - [ ] C# Scripting Basics Video 2 | <u>Due: 6/26</u>
 - [ ] Prep Lab | <u>Due: 6/28</u>
