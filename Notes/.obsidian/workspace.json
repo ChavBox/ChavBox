@@ -13,18 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc988d434b3675c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "ChavNotes/CS_321-GameProgramming/Unity Fundamentals.md",
                 "mode": "source",
                 "source": false
@@ -32,19 +20,55 @@
             }
           },
           {
-            "id": "5c643ef38efb8bf4",
+            "id": "bc04e6321b391d87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChavNotes/TODO.md",
+                "file": "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2be1cfe20788ffbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Game Project Map Features.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0eb6ea7e7b65e130",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ChavNotes/CS_321-GameProgramming/AI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "95386111501ccb6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Escape the Castle TODO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -94,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "4948abd230129e6c",
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ChavNotes/TODO.md",
+                "file": "Escape the Castle TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ChavNotes/TODO.md",
+                "file": "Escape the Castle TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ChavNotes/TODO.md"
+                "file": "Escape the Castle TODO.md"
               }
             }
           }
@@ -172,11 +196,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5c643ef38efb8bf4",
+  "active": "95386111501ccb6d",
   "lastOpenFiles": [
-    "ChavNotes/CS_321-GameProgramming/Scripting Basics.md",
+    "ChavNotes/CS_321-GameProgramming/AI.md",
+    "Escape the Castle TODO.md",
+    "ChavNotes/CS_321-GameProgramming/Collisions.md",
+    "ChavNotes/CS_321-GameProgramming/Game Controls.md",
+    "ChavNotes/CS_321-GameProgramming/Game Design Fundamentals.md",
+    "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
+    "Game Project Map Features.md",
+    "ChavNotes/CS_321-GameProgramming/Whiteboxing.md",
+    "ChavNotes/CS_321-GameProgramming/Lab 3 Tips.md",
     "ChavNotes/CS_321-GameProgramming/Unity Fundamentals.md",
     "ChavNotes/TODO.md",
+    "ChavNotes/CS_321-GameProgramming/Scripting Basics.md",
+    "ChavNotes/CS_321-GameProgramming/Prefabs.md",
+    "ChavNotes/CS_321-GameProgramming/Intro Lecture.md",
     "Past_Classes/CSCI_447/Readings/readingTips.png",
     "Past_Classes/CSCI_447/Readings/reading2.pdf",
     "Past_Classes/CSCI_447/Readings/paragraphInfo.png",
@@ -199,18 +234,8 @@
     "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
     "ChavNotes/CSCI_447/Operating Systems.md",
     "ChavNotes/CSCI_447/Monitors.md",
-    "ChavNotes/CSCI_447/Main Memory.md",
     "ChavNotes/CSCI_447/Homework/reading2.pdf",
     "ChavNotes/CSCI_447/Homework/hw5.pdf",
-    "ChavNotes/CSCI_447/General Notes.md",
-    "ChavNotes/CSCI_447/Frame Allocation.md",
-    "ChavNotes/CSCI_447/FINAL REVIEW.md",
-    "ChavNotes/CSCI_447/CPU Scheduling.md",
-    "ChavNotes/CSCI_447/Architecture Review.md",
-    "ChavNotes/CSCI_405/Essay_3/Essay3Notes.md",
-    "ChavNotes/CSCI_405/CSCI 405.md",
-    "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
-    "ChavNotes/CS_321-GameProgramming/Intro Lecture.md",
     "Untitled.canvas"
   ]
 }

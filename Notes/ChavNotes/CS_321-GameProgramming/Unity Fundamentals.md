@@ -28,3 +28,7 @@ Create relationships between objects
 - Pan: ALT+MMB
 - Zoom: ALT+RMB/Scroll Wheel
 - Fly-through mode: Hold RMB, use WASD, QE
+
+# Hotkeys
+scale object: R 
+Frame Camera to Current Scene View:  ctrl-shift-f (camera needs to be selected) 
