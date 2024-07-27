@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "036291be4e58662e",
+        "id": "332c7a96bd4959dd",
         "type": "tabs",
         "children": [
           {
-            "id": "1c63e164bc66fc56",
+            "id": "531ca78cd66a5fea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,8 +147,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1c63e164bc66fc56",
+  "active": "531ca78cd66a5fea",
   "lastOpenFiles": [
+    "TODO.md",
+    "CS_321-GameProgramming/Prefabs.md",
+    "CS_321-GameProgramming/Lab 3 Tips.md",
+    "CS_321-GameProgramming/Game Design Fundamentals.md",
+    "CS_321-GameProgramming/Game Controls.md",
+    "CS_321-GameProgramming/Collisions.md",
+    "CS_321-GameProgramming/AI.md",
     "CS_321-GameProgramming/Unity Fundamentals.md",
     "CS_321-GameProgramming/Scripting Basics.md",
     "CS_321-GameProgramming/Intro Lecture.md",
@@ -178,14 +185,7 @@
     "Excalidraw/Drawing 2024-04-10 11.02.21.excalidraw.md",
     "Excalidraw/diskArmTimingDiagram.md",
     "CSCI_405/Essay_3/Essay 3 Notes.md",
-    "TODO.md",
     "CSCI_447/Frame Allocation.md",
-    "CSCI_447/Page Replacement.md",
-    "CSCI_447/Virtual Memory.md",
-    "CSCI_405/CSCI 405.md",
-    "CSCI_405/Graphs.md",
-    "CSCI_405/Dynamic Programming.md",
-    "CSCI_405/HW 3 Stuff.md",
-    "CSCI_405/Minimum Spanning Trees (MST).md"
+    "CSCI_447/Page Replacement.md"
   ]
 }
