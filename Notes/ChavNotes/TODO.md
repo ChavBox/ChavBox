@@ -1,16 +1,19 @@
-# Urgent:
+- [ ] Start thinking about cluture paper topic
+- [ ] CSCI 480 A0- <u>Due 10/7</u>
+- [ ] CSCI 480 HW0 - <u>Due 10/4</u>
+- [ ] Watch L05 - <u>By 10/3</u>
 
+# This Week
+HW0 - Friday
 
-Lab 2
-Lab 4
+# Senior Project
+Reach out to client, schedule first meeting
+### Questions to ask
+- For \[customer\]
+- Who \[statement of need\]
+- The \[name of project]
+- is \[what it does\]
+- unlike \[what other people are doing\]
+- our product \[what it will do\]
 
-Lecture Exercises 2
-Lecture Exercises 3
-Lecture Exercises 4
-
-Game Journal 1
-Game Journal 2
-Game Journal 3
-
-Game Journal 4 (Due 7/28)
-
+	
