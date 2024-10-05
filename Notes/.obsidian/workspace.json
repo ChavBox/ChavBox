@@ -8,67 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15978ca7494ca21c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ChavNotes/CS_321-GameProgramming/Unity Fundamentals.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc04e6321b391d87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2be1cfe20788ffbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Project Map Features.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0eb6ea7e7b65e130",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ChavNotes/CS_321-GameProgramming/AI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95386111501ccb6d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Escape the Castle TODO.md",
+                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Escape the Castle TODO.md",
+                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Escape the Castle TODO.md",
+                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Escape the Castle TODO.md"
+                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md"
               }
             }
           }
@@ -196,46 +147,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "95386111501ccb6d",
+  "active": "2be1cfe20788ffbe",
   "lastOpenFiles": [
-    "ChavNotes/CS_321-GameProgramming/AI.md",
-    "Escape the Castle TODO.md",
-    "ChavNotes/CS_321-GameProgramming/Collisions.md",
-    "ChavNotes/CS_321-GameProgramming/Game Controls.md",
-    "ChavNotes/CS_321-GameProgramming/Game Design Fundamentals.md",
-    "ChavNotes/CS_321-GameProgramming/Game Ideas.md",
-    "Game Project Map Features.md",
-    "ChavNotes/CS_321-GameProgramming/Whiteboxing.md",
-    "ChavNotes/CS_321-GameProgramming/Lab 3 Tips.md",
-    "ChavNotes/CS_321-GameProgramming/Unity Fundamentals.md",
-    "ChavNotes/TODO.md",
-    "ChavNotes/CS_321-GameProgramming/Scripting Basics.md",
-    "ChavNotes/CS_321-GameProgramming/Prefabs.md",
-    "ChavNotes/CS_321-GameProgramming/Intro Lecture.md",
+    "ChavNotes/Past_Classes/Phil_112/Kant's Ethics.md",
+    "ChavNotes/Past_Classes/Phil_112/Final Exam Notes.md",
+    "ChavNotes/Past_Classes/Phil_112/Exam Tips.md",
+    "ChavNotes/Past_Classes/Phil_112/Euthanasia.md",
+    "ChavNotes/Past_Classes/Phil_112/Ethical Relativism.md",
+    "ChavNotes/Past_Classes/Phil_112/Divine Command Theory.md",
+    "ChavNotes/Past_Classes/Phil_112/Capital Punishment.md",
+    "ChavNotes/Past_Classes/Phil_112/CP Chart.md",
+    "ChavNotes/Past_Classes/Phil_112/Arguments.md",
+    "ChavNotes/Past_Classes/Phil_112/Argument Forms.md",
+    "ChavNotes/Past_Classes/Phil_112/Argument Evaluation.md",
+    "ChavNotes/Past_Classes/Phil_112/Abortion.md",
+    "ChavNotes/Past_Classes/Phil_112",
+    "ChavNotes/Past_Classes/Excalidraw/Drawing 2024-02-13 13.11.56.excalidraw.md",
+    "ChavNotes/Past_Classes/Excalidraw",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Unity Fundamentals.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Scripting Basics.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Prefabs.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Lab 3 Tips.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Intro Lecture.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Game Project Map Features.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Game Ideas.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Game Design Fundamentals.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Game Controls.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Escape the Castle TODO.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/Collisions.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming/AI.md",
+    "ChavNotes/Past_Classes/CS_321-GameProgramming",
+    "ChavNotes/Past_Classes/CSCI_447/Virtual Memory.md",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/readingTips.png",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/reading2.pdf",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/paragraphInfo.png",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/liu1973.pdf",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/li1989.pdf",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/jacob2001.pdf",
+    "ChavNotes/Past_Classes/CSCI_447/Readings/dennis1965.pdf",
+    "ChavNotes/Past_Classes/CSCI_447/Readings",
+    "ChavNotes/Past_Classes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
     "Past_Classes/CSCI_447/Readings/readingTips.png",
-    "Past_Classes/CSCI_447/Readings/reading2.pdf",
     "Past_Classes/CSCI_447/Readings/paragraphInfo.png",
-    "Past_Classes/CSCI_447/Readings/liu1973.pdf",
-    "Past_Classes/CSCI_447/Readings/li1989.pdf",
-    "Past_Classes/CSCI_447/Readings/jacob2001.pdf",
-    "Past_Classes/CSCI_447/Readings/dennis1965.pdf",
-    "Past_Classes/CSCI_447/Readings",
-    "ChavNotes/HW 4.md",
-    "ChavNotes/File System Implementation.md",
-    "ChavNotes/Excalidraw/parity venn diagram.md",
-    "ChavNotes/Excalidraw/diskArmTimingDiagram.md",
-    "ChavNotes/Excalidraw",
-    "ChavNotes/CSCI_447/Virtual Memory.md",
-    "ChavNotes/CSCI_447/Threads.md",
-    "ChavNotes/CSCI_447/Storage Management.md",
-    "ChavNotes/CSCI_447/Semaphores.md",
-    "ChavNotes/CSCI_447/Processes.md",
-    "ChavNotes/CSCI_447/Page Replacement.md",
-    "ChavNotes/CSCI_447/Operating_System_Concepts_10th_Edition.pdf",
-    "ChavNotes/CSCI_447/Operating Systems.md",
-    "ChavNotes/CSCI_447/Monitors.md",
-    "ChavNotes/CSCI_447/Homework/reading2.pdf",
-    "ChavNotes/CSCI_447/Homework/hw5.pdf",
     "Untitled.canvas"
   ]
 }
