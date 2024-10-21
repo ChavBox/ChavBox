@@ -12,3 +12,11 @@ Software Requirement Specification
 Track with issues
 - /estimate xhrs
 - /spent xhrs to update task tracking
+
+# Intellectual Property 101
+
+**Kinds of Intellectual Property (weak->strong)**
+- Trade Secrets
+- Trademarks/Service Marks
+- Copyrights
+- Patents

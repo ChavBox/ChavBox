@@ -13,38 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "CSCI_480/Lecture 6.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Lecture 6"
             }
           },
           {
-            "id": "e6993d974f0317e1",
+            "id": "9ec4f4f0ad9352c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "CSCI_480/Lecture 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a38c94117d7c1f39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CISS_346/Lecture 5.md",
-                "mode": "source",
-                "source": false
-              }
+                "currentVersion": "1.7.4"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.4"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -64,7 +54,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTime"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -79,7 +71,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -87,7 +81,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -110,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CISS_346/Lecture 5.md",
+                "file": "CSCI_480/Lecture 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +114,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Lecture 6"
             }
           },
           {
@@ -127,10 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CISS_346/Lecture 5.md",
+                "file": "CSCI_480/Lecture 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Lecture 6"
             }
           },
           {
@@ -141,7 +141,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -150,8 +152,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CISS_346/Lecture 5.md"
-              }
+                "file": "CSCI_480/Lecture 6.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Lecture 6"
             }
           }
         ]
@@ -172,18 +176,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a38c94117d7c1f39",
+  "active": "9ec4f4f0ad9352c3",
   "lastOpenFiles": [
+    "CSCI_480/Lights and Shading.md",
+    "CSCI_480/Lecture 6.md",
+    "CISS_346/Lecture Notes.md",
+    "CISS_346/Lecture 2.md",
     "CISS_346/Lecture 3.md",
     "CISS_346/Lecture 5.md",
     "TODO.md",
+    "CSCI_497 (Senior Proj)/Notes.md",
     "CSCI_480/Lecture 3.md",
     "CSCI_480/Lecture 2.md",
-    "CSCI_497 (Senior Proj)/Notes.md",
     "CSCI_480/Julia.md",
     "CSCI_480/Lecture 1.md",
     "CSCI_480/First Day Notes.md",
-    "CISS_346/Lecture 2.md",
     "CISS_346/First Day Notes.md",
     "CSCI_480",
     "CSCI_497 (Senior Proj)",
@@ -209,9 +216,6 @@
     "Past_Classes/Phil_112/Arguments.md",
     "Past_Classes/Phil_112/Argument Forms.md",
     "Past_Classes/Phil_112/Argument Evaluation.md",
-    "Past_Classes/Phil_112/Abortion.md",
-    "Past_Classes/Excalidraw/Drawing 2024-02-13 13.11.56.excalidraw.md",
-    "Past_Classes/CSCI_447/Virtual Memory.md",
     "CSCI_447/Readings/readingTips.png",
     "CSCI_447/Readings/paragraphInfo.png"
   ]

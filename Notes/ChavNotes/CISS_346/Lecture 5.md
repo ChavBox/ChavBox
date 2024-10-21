@@ -9,3 +9,14 @@ It depends on several factors:
 - Style
 - Decision Styles
 - Ethical Standard of Leadersa
+
+# Midterm
+Password requirement question on midterm
+Functional vs Non-Functional vs Security Requirements
+
+# Agile Review
+- Individuals and intreactions over processes and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
+- Produce end products that more often meet user needs most importantly with less re-work and risk
