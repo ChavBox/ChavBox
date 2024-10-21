@@ -13,13 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
+                "file": "ChavNotes/CISS_346/Culture Paper.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Culture Paper"
+            }
+          },
+          {
+            "id": "b13e132498e4ddac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ChavNotes/CISS_346/Culture Paper.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Culture Paper"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
+                "file": "ChavNotes/CISS_346/Culture Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Culture Paper"
             }
           },
           {
@@ -102,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
+                "file": "ChavNotes/CISS_346/Culture Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Culture Paper"
             }
           },
           {
@@ -116,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md"
-              }
+                "file": "ChavNotes/CISS_346/Culture Paper.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Culture Paper"
             }
           }
         ]
@@ -147,8 +178,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2be1cfe20788ffbe",
+  "active": "b13e132498e4ddac",
   "lastOpenFiles": [
+    "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
+    "ChavNotes/CISS_346/Culture Paper.md",
     "ChavNotes/Past_Classes/Phil_112/Kant's Ethics.md",
     "ChavNotes/Past_Classes/Phil_112/Final Exam Notes.md",
     "ChavNotes/Past_Classes/Phil_112/Exam Tips.md",
@@ -175,9 +208,7 @@
     "ChavNotes/Past_Classes/CS_321-GameProgramming/Game Controls.md",
     "ChavNotes/Past_Classes/CS_321-GameProgramming/Escape the Castle TODO.md",
     "ChavNotes/Past_Classes/CS_321-GameProgramming/Collisions.md",
-    "ChavNotes/Past_Classes/CS_321-GameProgramming/AI.md",
     "ChavNotes/Past_Classes/CS_321-GameProgramming",
-    "ChavNotes/Past_Classes/CSCI_447/Virtual Memory.md",
     "ChavNotes/Past_Classes/CSCI_447/Readings/readingTips.png",
     "ChavNotes/Past_Classes/CSCI_447/Readings/reading2.pdf",
     "ChavNotes/Past_Classes/CSCI_447/Readings/paragraphInfo.png",
