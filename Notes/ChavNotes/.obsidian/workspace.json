@@ -8,33 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "531ca78cd66a5fea",
+            "id": "8a85803285edd2ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSCI_480/Lecture 6.md",
+                "file": "CSCI_405/Dynamic Programming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 6"
-            }
-          },
-          {
-            "id": "9ec4f4f0ad9352c3",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "Dynamic Programming"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,24 +163,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9ec4f4f0ad9352c3",
+  "active": "8a85803285edd2ea",
   "lastOpenFiles": [
-    "CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
-    "CSCI_480/Lights and Shading.md",
-    "CSCI_480/Lecture 6.md",
-    "CISS_346/Lecture Notes.md",
-    "CISS_346/Lecture 2.md",
-    "CISS_346/Lecture 3.md",
-    "CISS_346/Lecture 5.md",
+    "CSCI_405/Day 1 Notes.md",
+    "CSCI_405/Dynamic Programming.md",
     "TODO.md",
+    "CSCI_497 (Senior Proj)/TODO.md",
     "CSCI_497 (Senior Proj)/Notes.md",
-    "CSCI_480/Lecture 3.md",
-    "CSCI_480/Lecture 2.md",
-    "CSCI_480/Julia.md",
-    "CSCI_480/Lecture 1.md",
-    "CSCI_480/First Day Notes.md",
-    "CISS_346/First Day Notes.md",
-    "CSCI_480",
+    "Past_Classes/CSCI_480/Filtering & Anti-Aliasing.md",
+    "CSCI_342/Important Class Info 1.md",
+    "CSCI_342/JavaScript.md",
+    "CSCI_405",
+    "Past_Classes/CSCI_405/essayRubric.pdf",
+    "CSCI_342",
+    "Past_Classes/CSCI_480/Splines.md",
+    "Past_Classes/CSCI_480/Final Project.md",
+    "Past_Classes/CSCI_480/Rasterization.md",
+    "Past_Classes/CSCI_480/Clipping.md",
+    "CSCI_480/Untitled",
+    "Past_Classes/CSCI_480/Lecture 6.md",
+    "Past_Classes/CSCI_480/Geometric Transformations.md",
+    "Past_Classes/CSCI_480/Graphics Pipeline.md",
+    "Past_Classes/CSCI_480/Lights and Shading.md",
+    "Past_Classes/CISS_346/Culture Paper.md",
+    "CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
+    "Past_Classes/CISS_346/Lecture Notes.md",
+    "Past_Classes/CISS_346/Lecture 2.md",
+    "Past_Classes/CISS_346/Lecture 3.md",
+    "Past_Classes/CISS_346/Lecture 5.md",
+    "Past_Classes/CSCI_480/Lecture 3.md",
+    "Past_Classes/CSCI_480/Lecture 2.md",
+    "Past_Classes/CSCI_480/Julia.md",
+    "Past_Classes/CSCI_480/Lecture 1.md",
+    "Past_Classes/CSCI_480",
     "CSCI_497 (Senior Proj)",
     "Past_Classes/CSCI_447/Readings/readingTips.png",
     "Past_Classes/CSCI_447/Readings/reading2.pdf",
@@ -201,21 +203,6 @@
     "Past_Classes/CSCI_447/Readings/liu1973.pdf",
     "Past_Classes/CSCI_447/Readings/li1989.pdf",
     "Past_Classes/CSCI_447/Readings/jacob2001.pdf",
-    "Past_Classes/CSCI_447/Readings/dennis1965.pdf",
-    "Past_Classes/CSCI_447/Homework/reading2.pdf",
-    "Past_Classes/CSCI_447/Homework/hw5.pdf",
-    "Past_Classes/CSCI_447/Homework/hw4.pdf",
-    "Past_Classes/CSCI_405/Essay_3/Essay3Notes.md",
-    "Past_Classes/Phil_112/Kant's Ethics.md",
-    "Past_Classes/Phil_112/Final Exam Notes.md",
-    "Past_Classes/Phil_112/Exam Tips.md",
-    "Past_Classes/Phil_112/Euthanasia.md",
-    "Past_Classes/Phil_112/Ethical Relativism.md",
-    "Past_Classes/Phil_112/Divine Command Theory.md",
-    "Past_Classes/Phil_112/Capital Punishment.md",
-    "Past_Classes/Phil_112/CP Chart.md",
-    "Past_Classes/Phil_112/Arguments.md",
-    "Past_Classes/Phil_112/Argument Forms.md",
     "CSCI_447/Readings/readingTips.png",
     "CSCI_447/Readings/paragraphInfo.png"
   ]

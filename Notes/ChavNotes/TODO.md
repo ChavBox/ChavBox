@@ -1,22 +1,10 @@
-- [ ] Start thinking about cluture paper topic
-- [ ] CSCI 480 A0- <u>Due 10/7</u>
-- [ ] CSCI 480 A1 - <u>Due 10/16</u>
-- [ ] CSCI 480 HW1 - <u>Due 10/14</u>
-- [ ] CSCI 480 Lecture Video (10/8)
-- [ ] Week 2 Participation 1 <u>Due TONIGHT 10/8</u>
+- [ ] Add elective? (9 am class or 10ish minutes late to group)
+	- [ ] CSCI 497B - Human Errors in SE (10ish minutes late to group)
+	- [ ] CSCI 461 - Computer Security/CSCI 497C - Calling BS in Big Data and AI (9am class)
+- [ ] Setup appointment for car (Waiting for response)
+- [ ] Work on Senior Project (4 hour minimum)
 
+## Homework
+- [ ] CSCI 405 Essay 1 | <u>Due: 1/13</u> 
+- [ ] 
 
-# This Week
-HW0 - Friday
-
-# Senior Project
-Reach out to client, schedule first meeting
-### Questions to ask
-- For \[customer\]
-- Who \[statement of need\]
-- The \[name of project]
-- is \[what it does\]
-- unlike \[what other people are doing\]
-- our product \[what it will do\]
-
-	
