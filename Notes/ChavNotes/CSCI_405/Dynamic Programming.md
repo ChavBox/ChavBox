@@ -52,3 +52,31 @@ Memoized-cut-rod-aux(p, n, r){
 
 ```
 
+Knapsack Problem:
+```
+n = number of items
+v.n = value of item n
+w.n = weight of item n
+W = capacity of backpack
+
+ks-memo(n, W){
+	init C[0..n, 0..w] = -inf    //C[i, w] = optimal value
+	Knapsack-alt(n, w, C)
+}
+
+ks-alt(n, w, C)(
+	if C[n, w] > 0{
+		return C[n, w]
+	}else{
+		// is value of taking current item + optimal value of remaining weight
+		// more than value of 
+		C[n, w] = max(v.n + ks-alt(n-1, w-w.n, C), ks-alt(n-1, w, C))
+	}
+)
+
+		for j = 10..W         //J increments by 10
+			C[i,j] = max(v.i + C[i-1, j-w.i], C[i, j-10])
+		//first check for v.i + C[i-1, j-w.i] is correct, but other is not
+		//
+}
+```
