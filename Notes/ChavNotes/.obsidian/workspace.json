@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSCI_405/HW1.md",
+                "file": "CSCI_497 (Senior Proj)/TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HW1"
+              "title": "TODO"
             }
           }
         ]
@@ -165,12 +165,12 @@
   },
   "active": "8a85803285edd2ea",
   "lastOpenFiles": [
-    "CSCI_405/Dynamic Programming.md",
+    "TODO.md",
     "CSCI_405/HW1.md",
+    "CSCI_405/Dynamic Programming.md",
     "CSCI_405/Matrix Chain Multiplication.md",
     "CSCI_342/React.md",
     "CSCI_342/Lesson 4 JSX.md",
-    "TODO.md",
     "CSCI_342/Important Class Info 1.md",
     "CSCI_405/Day 1 Notes.md",
     "CSCI_342/JavaScript.md",
