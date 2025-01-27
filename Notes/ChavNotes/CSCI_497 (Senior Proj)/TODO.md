@@ -7,3 +7,4 @@
 	- [ ] Check how it looks on mobile
 	- [ ] Indicate what the slider (translate button) is
 - [ ] Incorporate Navbar into PDFView
+
