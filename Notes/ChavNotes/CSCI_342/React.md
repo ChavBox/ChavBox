@@ -44,3 +44,72 @@ createElement()
 
 #### JSX
 	Javascript extensable markup language
+
+### Keys 
+List - collection of items
+	Use map to create JSX elements from an array
+	Pass props to each item
+	e.g. TODO list, 
+```
+const list = ["item 1", "item 2", ...]
+return(
+  <>
+	  map(list) => {
+	  <ul>
+		{item}
+	  </ul>
+)
+
+```
+
+
+### Styling
+CSS-in-JS libraries
+- install available libraries to use with JS
+```
+Inline-Style
+//object
+const heading = {
+	color: 'blue',
+	fontSize: '20px'
+}
+
+<div>
+	<h1 style={heading}></h1>
+</div>
+
+<div>
+	<h1 style={{color: 'red', fontSize: '32px'}}></h1>
+</div>
+
+
+CSS-Style
+//Seperate file with .css extension
+In .js file: import './App.css';
+
+Conditional Styling
+//use terinary operator to select class to style given component
+
+CSS Modules
+//create seperate style and import the module
+import styles from './Button.module.css'
+
+CSS-in-JS
+//write css directly in JS code using objects to represent the styles
+//many popular CSS-in-JS libraries to choose from
+import {css, jsx} from '@emotion/core';
+
+Sass
+//css pre-processor
+//files are executed on the server and sends css to the browser
+//extension is .scss
+npm install sass
+
+Tailwind css
+//utility first css framework
+//reusable classes for styling
+//customizable and mobile-first features
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
