@@ -20,3 +20,5 @@ Track with issues
 - Trademarks/Service Marks
 - Copyrights
 - Patents
+
+# Meeting 1/29

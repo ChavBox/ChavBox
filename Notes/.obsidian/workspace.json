@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChavNotes/CSCI_497 (Senior Proj)/TODO.md",
+                "file": "ChavNotes/CSCI_342/Project TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "Project TODO"
             }
           },
           {
@@ -192,10 +192,13 @@
   },
   "active": "e02bebe5dcdf37d2",
   "lastOpenFiles": [
+    "ChavNotes/CSCI_497 (Senior Proj)/TODO.md",
+    "ChavNotes/CSCI_342/Project TODO.md",
+    "ChavNotes/CSCI_497 (Senior Proj)/Notes.md",
+    "ChavNotes/CSCI_342/Lesson 4 JSX.md",
     "ChavNotes/CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
     "ChavNotes/TODO.md",
     "ChavNotes/CSCI_342/React.md",
-    "ChavNotes/CSCI_342/Lesson 4 JSX.md",
     "ChavNotes/CSCI_342/JavaScript.md",
     "ChavNotes/CSCI_342/Important Class Info 1.md",
     "Excalidraw/Drawing 2024-12-07 19.04.50.excalidraw.md",
@@ -218,9 +221,6 @@
     "ChavNotes/Past_Classes/Phil_112",
     "ChavNotes/Past_Classes/Excalidraw/Drawing 2024-02-13 13.11.56.excalidraw.md",
     "ChavNotes/Past_Classes/Excalidraw",
-    "ChavNotes/Past_Classes/CS_321-GameProgramming/Unity Fundamentals.md",
-    "ChavNotes/Past_Classes/CS_321-GameProgramming/Scripting Basics.md",
-    "ChavNotes/Past_Classes/CS_321-GameProgramming/Prefabs.md",
     "ChavNotes/Past_Classes/CS_321-GameProgramming",
     "ChavNotes/Past_Classes/CSCI_447/Readings/readingTips.png",
     "ChavNotes/Past_Classes/CSCI_447/Readings/reading2.pdf",
