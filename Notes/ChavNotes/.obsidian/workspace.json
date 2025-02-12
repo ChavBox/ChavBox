@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "332c7a96bd4959dd",
+        "id": "c034c25170e946f9",
         "type": "tabs",
         "children": [
           {
-            "id": "8a85803285edd2ea",
+            "id": "bbd3d2b9d23d4a6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSCI_342/Untitled.md",
+                "file": "CSCI_405/Essay 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Essay 2"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "byCreatedTime",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -163,11 +164,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8a85803285edd2ea",
+  "active": "bbd3d2b9d23d4a6b",
   "lastOpenFiles": [
-    "CSCI_497 (Senior Proj)/TODO.md",
-    "CSCI_342/Untitled.md",
     "TODO.md",
+    "CSCI_405/Essay 2.md",
+    "CSCI_405/Essay 2.md",
+    "CSCI_342/Project TODO.md",
+    "CSCI_497 (Senior Proj)/TODO.md",
+    "CSCI_497 (Senior Proj)/Notes.md",
+    "CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
+    "CSCI_497 (Senior Proj)",
+    "CSCI_497/Notes.md",
+    "CSCI_497/Karen Medical Formulary Meeting Notes.md",
+    "CSCI_497",
+    "CSCI_405/HW2.md",
+    "CSCI_342/Untitled.md",
     "CSCI_405/HW1.md",
     "CSCI_405/Dynamic Programming.md",
     "CSCI_405/Matrix Chain Multiplication.md",
@@ -176,7 +187,6 @@
     "CSCI_342/Important Class Info 1.md",
     "CSCI_405/Day 1 Notes.md",
     "CSCI_342/JavaScript.md",
-    "CSCI_497 (Senior Proj)/Notes.md",
     "Past_Classes/CSCI_480/Filtering & Anti-Aliasing.md",
     "CSCI_405",
     "Past_Classes/CSCI_405/essayRubric.pdf",
@@ -188,21 +198,12 @@
     "CSCI_480/Untitled",
     "Past_Classes/CSCI_480/Lecture 6.md",
     "Past_Classes/CSCI_480/Geometric Transformations.md",
-    "Past_Classes/CSCI_480/Graphics Pipeline.md",
-    "Past_Classes/CSCI_480/Lights and Shading.md",
-    "Past_Classes/CISS_346/Culture Paper.md",
-    "CSCI_497 (Senior Proj)/Karen Medical Formulary Meeting Notes.md",
-    "Past_Classes/CISS_346/Lecture Notes.md",
-    "Past_Classes/CISS_346/Lecture 2.md",
-    "Past_Classes/CISS_346/Lecture 3.md",
     "Past_Classes/CSCI_480",
-    "CSCI_497 (Senior Proj)",
     "Past_Classes/CSCI_447/Readings/readingTips.png",
     "Past_Classes/CSCI_447/Readings/reading2.pdf",
     "Past_Classes/CSCI_447/Readings/paragraphInfo.png",
     "Past_Classes/CSCI_447/Readings/liu1973.pdf",
     "Past_Classes/CSCI_447/Readings/li1989.pdf",
-    "Past_Classes/CSCI_447/Readings/jacob2001.pdf",
     "CSCI_447/Readings/readingTips.png",
     "CSCI_447/Readings/paragraphInfo.png"
   ]
