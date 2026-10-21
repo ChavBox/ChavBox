@@ -12,10 +12,31 @@ import argparse
 #Will focus on D=C=1 and D>1, C=1
 
 #Will also support polynomial fitting
+
+
+
+def initialize():
+    parser = argparse.ArgumentParser(usage='%(prog)s [-h] (--train | --predict | --eval) [--order ORDER] [--x X] [--y Y]'
+                                                        '[--model MODEL] [--preds PREDS] [--lr LR] [--max-steps MAX_STEPS]')                       
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--train", action="store_true", help="Train a model from x.txt and y.txt.")
+    mode.add_argument("--predict", action="store_true", help="Run prediction on a dev set using a trained model.")
+    mode.add_argument("--eval", action="store_true", help="Evaluate a trained model on a dev set (prints MSE).")
+
+    parser.add_argument('--order', type=int, default=1, help="Polynomial order (1 for linear model, default 1).")
+    parser.add_argument('--x', help="Path to inputs x.txt.")
+    parser.add_argument("--y", help="Path to targets y.txt.")
+    parser.add_argument("--model", help="Path to model file to be written.")
+    parser.add_argument("--preds", help="Learning rate for gradient descent.")
+    parser.add_argument("--lr", help="Learning rate for gradient descent.")
+    parser.add_argument("--max-steps", type=int, default=0, help="Max gradient steps; 0 means analytical solution (train), default 0.")
+    return parser.parse_args()
+
+
 #===================================================================================
 #Training mode:
 # Takes training set of an N_trD matrix of
-#inputs and a vector of N_tr outputs
+# inputs and a vector of N_tr outputs
 #N_tr: number of training examples
 #D: dimensionalyity of each input vector
 
@@ -30,11 +51,20 @@ import argparse
 #  - b: D+1 numbers in scientific notation 1.234e+02 seperated with space
 #  - w_1-w_D
 #===================================================================================
+def train_model(order, inputs, targets, model, lr, steps):
+    return
+
+
+#===================================================================================
 #Prediction mode:
 # Program takes a trained model, and new set of input
 # makes predictions for each input, storing result to a file
 # - one line per datapoint
 # - each line is a single number in scientific notation, with 3 decimal points
+#===================================================================================
+def model_predictions(order, inputs, model, lr, predictions):
+    return
+
 #===================================================================================
 #Evaluation mode:
 # Program takes trained model, and data set to evaluate on
@@ -49,18 +79,19 @@ import argparse
 # using mean/average squared error loss (MSE)
 # output: print dev set MSE in scientific notation, 3 decimal places
 #===================================================================================
+def model_eval(order, inputs, targets, model):
+    return
+
+def main():
+    args = initialize()
+    print(args)
+    print(args.length())
+    if args.train:
+        train_model()
+    elif args.predict:
+        model_predictions()
+    elif args.eval:
+        model_eval()
 
 if __name__ == "__main__":
-    # usage: prog2.py [-h] (--train | --predict | --eval) [--order ORDER] [--x X] [--y Y][--model MODEL] [--preds PREDS] [--lr LR] [--max-steps MAX STEPS]
-    parser=argparse.ArgumentParser()
-    parser.add_argument("--train", help="Train a model from x.txt and y.txt.")
-    parser.add_argument("--predict", help="Run prediction on a dev set using a trained model.")
-    parser.add_argument("--eval", help="Evaluate a trained model on a dev set (prints MSE).")
-    parser.add_argument("--order")
-    parser.add_argument("--x")
-    parser.add_argument("--y")
-    parser.add_argument("--model")
-    parser.add_argument("--preds")
-    parser.add_argument("--lr")
-    parser.add_argument("--max-steps")
-    parser.parse_args()
+    main()
