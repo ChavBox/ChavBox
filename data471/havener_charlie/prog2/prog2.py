@@ -1,6 +1,6 @@
 import numpy as np
 import argparse
-
+from pathlib import Path
 #Create a program that trains and evaluates
 #liner regression models.
 
@@ -24,10 +24,10 @@ def initialize():
     mode.add_argument("--eval", action="store_true", help="Evaluate a trained model on a dev set (prints MSE).")
 
     parser.add_argument('--order', type=int, default=1, help="Polynomial order (1 for linear model, default 1).")
-    parser.add_argument('--x', help="Path to inputs x.txt.")
-    parser.add_argument("--y", help="Path to targets y.txt.")
-    parser.add_argument("--model", help="Path to model file to be written.")
-    parser.add_argument("--preds", help="Learning rate for gradient descent.")
+    parser.add_argument('--x', default='', help="Path to inputs x.txt.")
+    parser.add_argument("--y", default='', help="Path to targets y.txt.")
+    parser.add_argument("--model", default='', help="Path to model file to be written.")
+    parser.add_argument("--preds", default='', help="Path to write predictions (predict).")
     parser.add_argument("--lr", help="Learning rate for gradient descent.")
     parser.add_argument("--max-steps", type=int, default=0, help="Max gradient steps; 0 means analytical solution (train), default 0.")
     return parser.parse_args()
@@ -50,6 +50,8 @@ def initialize():
 # - plaintext file of a single line containing: 
 #  - b: D+1 numbers in scientific notation 1.234e+02 seperated with space
 #  - w_1-w_D
+#  i.e.
+# 3.142e+01 w1 w2 w3 w4
 #===================================================================================
 def train_model(order, inputs, targets, model, lr, steps):
     return
@@ -63,6 +65,11 @@ def train_model(order, inputs, targets, model, lr, steps):
 # - each line is a single number in scientific notation, with 3 decimal points
 #===================================================================================
 def model_predictions(order, inputs, model, lr, predictions):
+    m = open(model).readline.split()
+    b = m[0]
+    w = np.fromstring(m[1:])
+    print(b)
+    print(w)
     return
 
 #===================================================================================
@@ -83,15 +90,22 @@ def model_eval(order, inputs, targets, model):
     return
 
 def main():
+    path = Path(__file__).resolve().parent
     args = initialize()
-    print(args)
-    print(args.length())
+    order = args.order
+    inputs = path / args.x
+    targets = path / args.y
+    model = path / args.model
+    predictions = path / args.preds
+    lr = args.lr
+    steps = args.max_steps
+
     if args.train:
         train_model()
     elif args.predict:
-        model_predictions()
+        model_predictions(order, inputs, model, lr, predictions)
     elif args.eval:
-        model_eval()
+        model_eval(order, inputs, targets, model)
 
 if __name__ == "__main__":
     main()
