@@ -1,19 +1,6 @@
 import numpy as np
 import argparse
 from pathlib import Path
-#Create a program that trains and evaluates
-#liner regression models.
-
-# x is input, a vector with D dimensions
-# w is vector of weights, with D dimensions
-# b is the scalar bias term
-# y is the scalar model output
-
-#Will focus on D=C=1 and D>1, C=1
-
-#Will also support polynomial fitting
-
-
 
 def initialize():
     parser = argparse.ArgumentParser(usage='%(prog)s [-h] (--train | --predict | --eval) [--order ORDER] [--x X] [--y Y]'
@@ -25,13 +12,22 @@ def initialize():
 
     parser.add_argument('--order', type=int, default=1, help="Polynomial order (1 for linear model, default 1).")
     parser.add_argument('--x', default='', help="Path to inputs x.txt.")
-    parser.add_argument("--y", default='', help="Path to targets y.txt.")
+    parser.add_argument("--y", help="Path to targets y.txt.")
     parser.add_argument("--model", default='', help="Path to model file to be written.")
-    parser.add_argument("--preds", default='', help="Path to write predictions (predict).")
+    parser.add_argument("--preds", help="Path to write predictions (predict).")
     parser.add_argument("--lr", help="Learning rate for gradient descent.")
     parser.add_argument("--max-steps", type=int, default=0, help="Max gradient steps; 0 means analytical solution (train), default 0.")
-    return parser.parse_args()
 
+    args = parser.parse_args()
+    if args.train and not (args.x and args.y and args.model):
+        parser.error("--train requires the following arguments: --x --y --model")
+    elif(args.max_steps>0 and not args.lr):
+        parser.error("--train requires --lr when --max-steps > 0")
+    elif args.predict and not (args.x and args.model and args.preds):
+        parser.error("--predict requires the following arguments: --x --model --preds")
+    elif args.eval and not (args.x and args.y and args.model):
+        parser.error("--eval requires the following arguments: --x --y --model")
+    return args
 
 #===================================================================================
 #Training mode:
@@ -53,7 +49,28 @@ def initialize():
 #  i.e.
 # 3.142e+01 w1 w2 w3 w4
 #===================================================================================
-def train_model(order, inputs, targets, model, lr, steps):
+def train_model(order, inputs, targets, model_path, lr, steps):
+    if steps == 0:
+        model = train_analytical(order, inputs, targets)
+    else:
+        model = train_gd(order, inputs, targets, float(lr), steps)
+    np.savetxt(model_path, model, fmt="%.3e", newline=" ")
+    return
+
+def train_analytical(order, inputs, targets):
+    ones = np.ones(np.shape(inputs)[0])
+    features = np.column_stack((ones, inputs))
+    inverse = np.dot(np.transpose(features), features)
+    try:
+        inverse = np.linalg.inv(inverse)
+    except np.linalg.LinAlgError:
+        print("Matrix is unable to be inverted")
+        return
+    
+    return np.dot(np.dot(np.transpose(features), targets), inverse)
+
+
+def train_gd(order, inputs, targets, lr, steps):
     return
 
 
@@ -64,13 +81,10 @@ def train_model(order, inputs, targets, model, lr, steps):
 # - one line per datapoint
 # - each line is a single number in scientific notation, with 3 decimal points
 #===================================================================================
-def model_predictions(order, inputs, model, lr, predictions):
-    m = open(model).readline.split()
-    b = m[0]
-    w = np.fromstring(m[1:])
-    print(b)
-    print(w)
-    return
+def model_predictions(order, inputs, model):
+    b = model[0]
+    w = model[1:]
+    return np.dot(inputs, w)+b
 
 #===================================================================================
 #Evaluation mode:
@@ -87,25 +101,26 @@ def model_predictions(order, inputs, model, lr, predictions):
 # output: print dev set MSE in scientific notation, 3 decimal places
 #===================================================================================
 def model_eval(order, inputs, targets, model):
-    return
+    p = model_predictions(order, inputs, model)
+    error = np.mean(np.square(targets-p))
+    print(f"{error:.3e}")
 
 def main():
-    path = Path(__file__).resolve().parent
     args = initialize()
-    order = args.order
-    inputs = path / args.x
-    targets = path / args.y
-    model = path / args.model
-    predictions = path / args.preds
-    lr = args.lr
-    steps = args.max_steps
+    inputs = np.loadtxt(args.x, ndmin=2)
+    if args.y:
+        targets = np.loadtxt(args.y)
+        if targets.shape[0] != inputs.shape[0]:
+            print("x and y must have the same number of rows")
+            return
 
     if args.train:
-        train_model()
+        train_model(args.order, inputs, targets, args.model, args.lr, args.max_steps)
     elif args.predict:
-        model_predictions(order, inputs, model, lr, predictions)
+        p = model_predictions(args.order, inputs, np.loadtxt(args.model))
+        np.savetxt(args.preds, p, fmt='%.3e')
     elif args.eval:
-        model_eval(order, inputs, targets, model)
+        model_eval(args.order, inputs, targets, np.loadtxt(args.model))
 
 if __name__ == "__main__":
     main()
