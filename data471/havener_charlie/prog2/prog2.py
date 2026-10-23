@@ -1,5 +1,6 @@
 import numpy as np
 import argparse
+import sys
 from pathlib import Path
 
 def initialize():
@@ -64,14 +65,23 @@ def train_analytical(order, inputs, targets):
     try:
         inverse = np.linalg.inv(inverse)
     except np.linalg.LinAlgError:
-        print("Matrix is unable to be inverted")
-        return
+        sys.exit("Matrix is unable to be inverted")
     
     return np.dot(np.dot(np.transpose(features), targets), inverse)
 
 
 def train_gd(order, inputs, targets, lr, steps):
-    return
+    shape = np.shape(inputs)
+    w = np.zeros(shape[1])
+    b = 1
+    for i in range(steps):
+        yHat = (np.dot(inputs, w)+b) - targets
+        xT = np.transpose(inputs)
+        wGrad = (2/shape[0])*(np.dot(xT, yHat))
+        bGrad = (2/shape[0])*np.sum(yHat)
+        w = w-lr*wGrad
+        b = b-lr*bGrad
+    return np.concatenate(([b], w))
 
 
 #===================================================================================
@@ -109,10 +119,14 @@ def main():
     args = initialize()
     inputs = np.loadtxt(args.x, ndmin=2)
     if args.y:
-        targets = np.loadtxt(args.y)
+        targets = np.loadtxt(args.y, ndmin=1)
         if targets.shape[0] != inputs.shape[0]:
             print("x and y must have the same number of rows")
             return
+    if args.max_steps < 0:
+        print("max-steps must be >= 0")
+        return
+
 
     if args.train:
         train_model(args.order, inputs, targets, args.model, args.lr, args.max_steps)
