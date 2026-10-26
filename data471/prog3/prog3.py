@@ -4,37 +4,44 @@ import sys
 from pathlib import Path
 
 def initialize():
-    parser = argparse.ArgumentParser(usage='%(prog)s [-h] (--train | --predict | --eval) [--order ORDER] [--x X] [--y Y]'
-                                                        '[--model MODEL] [--preds PREDS] [--lr LR] [--max-steps MAX_STEPS]')                       
+    parser = argparse.ArgumentParser(usage='%(prog)s [-h] (--train | --predict | --eval) [--trainx TRAINX] [--trainy TRAINY] [--devx DEVX]'
+                                                        '[--devy DEVY] [--model MODEL] [--preds PREDS] [--lr LR] [--max-steps MAX_STEPS]' \
+                                                        '[--mb MB] [--patience PATIENCE] [--dev_freq DEV_FREQ] [--verbose]',)                       
     mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument("--train", action="store_true", help="Train a model from x.txt and y.txt.")
-    mode.add_argument("--predict", action="store_true", help="Run prediction on a dev set using a trained model.")
-    mode.add_argument("--eval", action="store_true", help="Evaluate a trained model on a dev set (prints MSE).")
+    mode.add_argument("--train", action="store_true", help="Train a multinomial logistic regression model from X and Y.")
+    mode.add_argument("--predict", action="store_true", help="Run prediction on a dev/test set using a trained model.")
+    mode.add_argument("--eval", action="store_true", help="Evaluate a trained model on a dev set (prints accuracy).")
 
-    parser.add_argument('--order', type=int, default=1, help="Polynomial order (1 for linear model, default 1).")
-    parser.add_argument('--x', default='', help="Path to inputs x.txt.")
-    parser.add_argument("--y", help="Path to targets y.txt.")
-    parser.add_argument("--model", default='', help="Path to model file to be written.")
-    parser.add_argument("--preds", help="Path to write predictions (predict).")
+    parser.add_argument('--trainx', default='', help="Path to training inputs npy file.")
+    parser.add_argument('--trainy', default='', help="Path to training targets npy file (class labels).")
+    parser.add_argument('--devx', default='', help="Path to development inputs npy file.")
+    parser.add_argument('--devy', default='', help="Path to development targets npy file (class labels).")
+    parser.add_argument("--model", default='model.npz', help="Path to model file to be written (train) or read (predict/eval). default \"model.npz\".")
+    parser.add_argument("--preds", help="Path to write predictions npy file(predict).")
     parser.add_argument("--lr", help="Learning rate for gradient descent.")
-    parser.add_argument("--max-steps", type=int, default=0, help="Max gradient steps; 0 means analytical solution (train), default 0.")
+    parser.add_argument("--max-steps", type=int, default=5000, help="Max MB-SGD steps, default 5000.")
+
+    parser.add_argument('--mb', type=int, default=32, help="Mini-batch size, default 32.")
+    parser.add_argument('--patience', type=int, default=10, help="Early stopping patience in number of dev evals without improvement, default 10.")
+    parser.add_argument('--dev_freq', type=int, default=500, help="Evaluate on the dev set every this number of gradient steps, default 500.")
+    parser.add_argument('--verbose', action='store_true', help="Enable verbose mode, in which each minibatch loss is printed.")
+
 
     args = parser.parse_args()
-    if args.train and not (args.x and args.y and args.model):
-        parser.error("--train requires the following arguments: --x --y --model")
-    elif(args.max_steps>0 and not args.lr):
-        parser.error("--train requires --lr when --max-steps > 0")
-    elif args.predict and not (args.x and args.model and args.preds):
-        parser.error("--predict requires the following arguments: --x --model --preds")
-    elif args.eval and not (args.x and args.y and args.model):
-        parser.error("--eval requires the following arguments: --x --y --model")
+    if args.train and not (args.trainx and args.trainy and args.devx and args.devy and args.lr):
+        parser.error("--train requires the following arguments: --trainx --trainy --devx --devy --lr")
+    elif args.predict and not (args.devx and args.preds):
+        parser.error("--predict requires the following arguments: --devx --preds")
+    elif args.eval and not (args.devx and args.devy):
+        parser.error("--eval requires the following arguments: --devx --devy")
+
     return args
 
 #===================================================================================
 #Training mode:
-# Takes training set of an N_trD matrix of
+# Takes training set of an N x D matrix of
 # inputs and a vector of N_tr outputs
-#N_tr: number of training examples
+#N: number of training examples
 #D: dimensionalyity of each input vector
 
 #Model will be trained to minimize empirical risk w/ squared error loss
@@ -50,15 +57,15 @@ def initialize():
 #  i.e.
 # 3.142e+01 w1 w2 w3 w4
 #===================================================================================
-def train_model(order, inputs, targets, model_path, lr, steps):
+def train_model(trainx, trainy, devx, devy, model, lr, max_steps, mb, patience, dev_freq, verbose):
     if steps == 0:
-        model = train_analytical(order, inputs, targets)
+        model = train_analytical(inputs, targets)
     else:
-        model = train_gd(order, inputs, targets, float(lr), steps)
+        model = train_gd(inputs, targets, float(lr), steps)
     np.savetxt(model_path, model, fmt="%.3e", newline=" ")
     return
 
-def train_analytical(order, inputs, targets):
+def train_analytical(inputs, targets):
     ones = np.ones(np.shape(inputs)[0])
     features = np.column_stack((ones, inputs))
     inverse = np.dot(np.transpose(features), features)
@@ -70,7 +77,7 @@ def train_analytical(order, inputs, targets):
     return np.dot(np.dot(np.transpose(features), targets), inverse)
 
 
-def train_gd(order, inputs, targets, lr, steps):
+def train_gd(inputs, targets, lr, steps):
     shape = np.shape(inputs)
     w = np.zeros(shape[1])
     b = 1
@@ -88,13 +95,20 @@ def train_gd(order, inputs, targets, lr, steps):
 #Prediction mode:
 # Program takes a trained model, and new set of input
 # makes predictions for each input, storing result to a file
-# - one line per datapoint
-# - each line is a single number in scientific notation, with 3 decimal points
+# - N x C nd array of type np.float64
+# - N is the number of data points
+# - C is the number of classes
 #===================================================================================
-def model_predictions(order, inputs, model):
-    b = model[0]
-    w = model[1:]
-    return np.dot(inputs, w)+b
+def model_predictions(devx, model):
+    W = model["W"]
+    b = model["b"]
+    d, c = np.shape(W)
+    if np.shape(b) != (c,):
+        sys.exit("Model file is not in the correct format")
+    elif np.shape(devx)[1] != d:
+        sys.exit("Input data is not in the correct format")
+    z = np.dot(devx, W) + b
+    return softmax(z)
 
 #===================================================================================
 #Evaluation mode:
@@ -110,31 +124,39 @@ def model_predictions(order, inputs, model):
 # using mean/average squared error loss (MSE)
 # output: print dev set MSE in scientific notation, 3 decimal places
 #===================================================================================
-def model_eval(order, inputs, targets, model):
-    p = model_predictions(order, inputs, model)
-    error = np.mean(np.square(targets-p))
-    print(f"{error:.3e}")
+def model_eval(devx, devy, model):
+    p = model_predictions(devx, model)
+    if np.shape(devx)[0] != np.shape(devy)[0]:
+        sys.exit("Input data and target data are not the same length")
+    classes = np.argmax(p, axis=1)
+    correct = np.sum(classes == devy)
+    accuracy = correct / np.shape(devx)[0]
+    print(f"{accuracy:.3f}")
+
+def softmax(z):
+    expZ = np.exp(z - np.max(z, axis=1, keepdims=True)) 
+    return (expZ / np.sum(expZ, axis=1, keepdims=True))
 
 def main():
     args = initialize()
-    inputs = np.loadtxt(args.x, ndmin=2)
-    if args.y:
-        targets = np.loadtxt(args.y, ndmin=1)
-        if targets.shape[0] != inputs.shape[0]:
-            print("x and y must have the same number of rows")
-            return
-    if args.max_steps < 0:
-        print("max-steps must be >= 0")
-        return
-
 
     if args.train:
-        train_model(args.order, inputs, targets, args.model, args.lr, args.max_steps)
+        # load trainx,y devx,y model, lr, maxsteps, mb, patience, dev_freq, verbose
+        trainx = np.atleast_2d(np.load(args.trainx))
+        trainy = np.load(args.trainy)
+        devx = np.atleast_2d(np.load(args.devx))
+        devy = np.load(args.devy)
+        train_model(trainx, trainy, devx, devy, args.model, args.lr, args.max_steps, args.mb, args.patience, args.dev_freq, args.verbose)
     elif args.predict:
-        p = model_predictions(args.order, inputs, np.loadtxt(args.model))
-        np.savetxt(args.preds, p, fmt='%.3e')
+        model = np.load(args.model)
+        devx = np.atleast_2d(np.load(args.devx))
+        p = model_predictions(devx, model)
+        np.save(args.preds, p)
     elif args.eval:
-        model_eval(args.order, inputs, targets, np.loadtxt(args.model))
+        devx = np.atleast_2d(np.load(args.devx))
+        devy = np.load(args.devy)
+        model = np.load(args.model)
+        model_eval(devx, devy, model)
 
 if __name__ == "__main__":
     main()
