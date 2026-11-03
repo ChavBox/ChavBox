@@ -64,27 +64,24 @@ def initialize():
 # Model weights initialized with Glorot initilization, biases initialized to 0
 #===================================================================================
 def train_model(trainx, trainy, devx, devy, model, lr, max_steps, mb, patience, dev_freq, verbose, L, activation, C):
-    N_tr, D = np.shape(trainx)
-    N_dev, D_dev = np.shape(devx)
+    N, D = np.shape(trainx)
+    layers = L.split(",")
+    #Setup weight and bias matrices
+    W = []
+    b = []
+    #Each item in L is of the form "unitsxlayers"
+    for i in range(len(layers)):
+        units, layers = layers[i].split("x")
+    
+    
+  
 
     # Check for inconsistency in provided arguments
-    if mb > N_tr:
-        sys.exit(f"Mini-batch size {mb} is larger than training set size {N_tr}")
-    if N_tr != np.shape(trainy)[0]:
-        sys.exit(f"Training inputs {N_tr} and outputs {np.shape(trainy)[0]} are not the same length")
-    if N_dev != np.shape(devy)[0]:
-        sys.exit(f"Dev inputs {N_dev} and outputs {np.shape(devy)[0]} are not the same length")
-    if D != D_dev:
-        sys.exit(f"Training {N_tr} x {D} and dev {N_dev} x {D_dev} data are not the same dimensionality")
-    if lr <= 0 or mb <= 0 or max_steps <= 0 or patience <= 0 or dev_freq <= 0:
-        sys.exit(f"Learning rate: {lr}, mini-batch size: {mb}, max steps: {max_steps}, patience: {patience}, and dev frequency: {dev_freq} must be positive")
     
-    c = np.max(trainy) + 1
-    W = np.zeros((D, c))
-    b = np.zeros(c)
-    steps = 0
+
+
+    steps, lossChange = 0
     epoch = 1
-    lossChange = 0
     bestLoss = float("inf")
     while steps < max_steps:
         indices = np.random.permutation(N_tr)
@@ -134,7 +131,15 @@ def miniBatch_SGD(p, oneHot, minix):
     bGrad = np.dot(np.transpose(ones), (p-oneHot)) / np.shape(minix)[0]
     return wGrad, bGrad, risk
 
-
+#Glorot Initilization
+# Weights = uniform distribution of 
+#        /      6         \         /      6         \
+# -sqrt  | -------------  | , sqrt  | -------------  |
+#        \ L_{l-1}+{L_l}) /         \ L_{l-1}+{L_l}) /
+#
+# L_{l-1} is dimension of previous layer
+# L_{l} is dimension of layer l
+# Input is N x D where D is dimension
 
 #===================================================================================
 #Prediction mode:
