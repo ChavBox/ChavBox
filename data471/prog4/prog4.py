@@ -1,7 +1,6 @@
 import numpy as np
 import argparse
 import sys
-from pathlib import Path
 
 def initialize():
     parser = argparse.ArgumentParser(usage='%(prog)s [-h] (--train | --predict | --eval) (--regression | --classification)'
@@ -46,14 +45,9 @@ def initialize():
 
     return args
 
-def accuracy(p, devy):
-    classes = np.argmax(p, axis=1)
-    correct = np.sum(classes == devy)
-    return correct / np.shape(devy)[0]
 
-def softmax(z):
-    expZ = np.exp(z - np.max(z, axis=1, keepdims=True)) 
-    return (expZ / np.sum(expZ, axis=1, keepdims=True))
+
+
 
 
 #===================================================================================
@@ -96,6 +90,7 @@ def train_model(trainx, trainy, devx, devy, model, lr, max_steps, mb, patience, 
         indices = np.random.permutation(N_tr)
         trainx = trainx[indices]
         trainy = trainy[indices]
+
         for start in range(0, N_tr, mb):
             end = start + mb
             if end > N_tr or steps >= max_steps:
@@ -143,7 +138,7 @@ def miniBatch_SGD(p, oneHot, minix):
 
 #===================================================================================
 #Prediction mode:
-# Program takes a trained model, and new set of input
+# Takes a trained model, and new set of input
 # makes predictions for each input, storing result to a file
 # - N x D nd array of type np.float64
 # - N is the number of data points
@@ -163,11 +158,11 @@ def model_predictions(devx, model):
     for i in range(layers):
         w = weights[i]
         b = biases[i]
-        if w.shape[0] != D:
-            sys.exit(f"Input dimension {D} does not match model weight dimension {w.shape[0]} for layer {i+1}")
-        D = w.shape[1]
-        if b.shape[0] != D:
-            sys.exit(f"Bias dimension {b.shape[0]} does not match weight output dimension {D} for layer {i+1}")
+        if np.shape(w)[0] != D:
+            sys.exit(f"Input dimension {D} does not match model weight dimension {np.shape(w)[0]} for layer {i+1}")
+        D = np.shape(w)[1]
+        if np.shape(b)[0] != D:
+            sys.exit(f"Bias dimension {np.shape(b)[0]} does not match weight output dimension {D} for layer {i+1}")
         devx = np.dot(devx, w) + b
         if i != layers -1:
             devx = activate(devx, activation)
@@ -185,16 +180,30 @@ def activate(x, activation):
     elif activation == 'sigmoid':
         return 1 / (1 + np.exp(-x))
 
+def softmax(z):
+    expZ = np.exp(z - np.max(z, axis=1, keepdims=True)) 
+    return (expZ / np.sum(expZ, axis=1, keepdims=True))
+
 #===================================================================================
 #Evaluation mode:
-
+# Takes a trained model, and an N x D matrix and vector of N targets
+# Targets are integers from 0 to C-1 or vectors of length C
 #===================================================================================
 def model_eval(devx, devy, model):
+    N, D = np.shape(devx)
+    if N != np.shape(devy)[0]:
+        sys.exit(f"Dev inputs {N} and outputs {np.shape(devy)[0]} are not the same length")
     p = model_predictions(devx, model)
-    if np.shape(devx)[0] != np.shape(devy)[0]:
-        sys.exit("Input data and target data are not the same length")
-    return accuracy(p, devy)
-
+    if model['task'] == 'classification':
+        return accuracy(p, devy)
+    elif model['task'] == 'regression':
+        mean = np.mean(devy, axis=0)
+        return 1-(np.sum(np.square(devy-p))/np.sum(np.square(devy-mean)))
+    
+def accuracy(p, devy):
+    classes = np.argmax(p, axis=1)
+    correct = np.sum(classes == devy)
+    return correct / np.shape(devy)[0]
 
 def main():
     args = initialize()
@@ -214,8 +223,8 @@ def main():
         devx = np.atleast_2d(np.load(args.devx))
         devy = np.load(args.devy)
         model = np.load(args.model)
-        accuracy = model_eval(devx, devy, model)
-        print(f"{accuracy:.3f}")
+        evaluation = model_eval(devx, devy, model)
+        print(f"{evaluation:.3f}")
 
 
 if __name__ == "__main__":
