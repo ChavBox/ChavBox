@@ -18,7 +18,7 @@ def initialize():
     parser.add_argument('--devy', default='', help="Path to development targets npy file (class labels).")
     parser.add_argument("--model", default='model.npz', help="Path to model file to be written (train) or read (predict/eval). default \"model.npz\".")
     parser.add_argument("--preds", help="Path to write predictions npy file(predict).")
-    parser.add_argument("--lr", help="Learning rate for gradient descent.")
+    parser.add_argument("--lr", type=float, help="Learning rate for gradient descent.")
     parser.add_argument("--max-steps", type=int, default=5000, help="Max MB-SGD steps, default 5000.")
 
     parser.add_argument('--mb', type=int, default=32, help="Mini-batch size, default 32.")
@@ -43,52 +43,84 @@ def initialize():
 # inputs and a vector of N_tr outputs
 #N: number of training examples
 #D: dimensionalyity of each input vector
-
-#Model will be trained to minimize empirical risk w/ squared error loss
-
-#Two different algorithms for finding optimal w and b
-# - plugged into a closed-form solution
-# - gradient descent algorithm
-
+#Model will be trained to minimize empirical risk w/ cross-entropy loss
+# - minibatch stochastic gradient descent algorithm
 # Training result is a model file which is
-# - plaintext file of a single line containing: 
-#  - b: D+1 numbers in scientific notation 1.234e+02 seperated with space
-#  - w_1-w_D
-#  i.e.
-# 3.142e+01 w1 w2 w3 w4
+# - binary numpy npz file
+#  - b: length c numpy array
+#  - W: D x C numpyh array of np.float64
+# Usage:
+# model =np.load("model.npz")
+#W = model["W"]
+#b = model["b"]
 #===================================================================================
-def train_model(trainx, trainy, devx, devy, model, lr, max_steps, mb, patience, dev_freq, verbose):
-    if steps == 0:
-        model = train_analytical(inputs, targets)
-    else:
-        model = train_gd(inputs, targets, float(lr), steps)
-    np.savetxt(model_path, model, fmt="%.3e", newline=" ")
-    return
+def train_model(trainx, trainy, devx, devy, lr, max_steps, mb, patience, dev_freq, verbose, model):
+    N_tr, D = np.shape(trainx)
+    N_dev, D_dev = np.shape(devx)
+    if mb > N_tr:
+        sys.exit(f"Mini-batch size {mb} is larger than training set size {N_tr}")
+    if N_tr != np.shape(trainy)[0]:
+        sys.exit(f"Training inputs {N_tr} and outputs {np.shape(trainy)[0]} are not the same length")
+    if N_dev != np.shape(devy)[0]:
+        sys.exit(f"Dev inputs {N_dev} and outputs {np.shape(devy)[0]} are not the same length")
+    if D != D_dev:
+        sys.exit(f"Training {N_tr} x {D} and dev {N_dev} x {D_dev} data are not the same dimensionality")
+    if lr <= 0 or mb <= 0 or max_steps <= 0 or patience <= 0 or dev_freq <= 0:
+        sys.exit(f"Learning rate: {lr}, mini-batch size: {mb}, max steps: {max_steps}, patience: {patience}, and dev frequency: {dev_freq} must be positive")
+    c = np.max(trainy) + 1
+    W = np.zeros((D, c))
+    b = np.zeros(c)
+    steps = 0
+    epoch = 1
+    lossChange = 0
+    bestLoss = float("inf")
+    while steps < max_steps:
+        indices = np.random.permutation(N_tr)
+        trainx = trainx[indices]
+        trainy = trainy[indices]
+        for start in range(0, N_tr, mb):
+            end = start + mb
+            if end > N_tr or steps >= max_steps:
+                break
+            miniX = trainx[start:end]
+            miniY = trainy[start:end]
+            p = model_predictions(miniX, {"W": W, "b": b})
+            oneHot = np.eye(c)[miniY]
+            wGrad, bGrad, risk = miniBatch_SGD(p, oneHot, miniX)
+            W = W - lr * wGrad
+            b = b - lr * bGrad
+            steps += 1
+            if verbose:
+                print(f"{risk:.3f} batch, update {steps}, epoch {epoch}")
+            if steps % dev_freq == 0:
+                p = model_predictions(devx, {"W": W, "b": b})
+                oneHot = np.eye(c)[devy]
+                dev_loss = avg_loss(p, oneHot)
+                acc = accuracy(p, devy)
+                if dev_loss < bestLoss:
+                    np.savez(model, W=W, b=b)
+                    bestLoss = dev_loss
+                    lossChange = 0
+                else:
+                    lossChange += 1
+                if lossChange > patience:
+                    print(f"Early stopping after {steps} updates, epoch {epoch}")
+                print(f"dev loss={dev_loss:.3f} acc={acc:.3f} (as of update {steps}, epoch {epoch})")
+        epoch += 1
 
-def train_analytical(inputs, targets):
-    ones = np.ones(np.shape(inputs)[0])
-    features = np.column_stack((ones, inputs))
-    inverse = np.dot(np.transpose(features), features)
-    try:
-        inverse = np.linalg.inv(inverse)
-    except np.linalg.LinAlgError:
-        sys.exit("Matrix is unable to be inverted")
-    
-    return np.dot(np.dot(np.transpose(features), targets), inverse)
+def avg_loss(p, oneHot):
+    loss = -np.sum(oneHot * np.log(p), axis=1)
+    risk = np.mean(loss)
+    return risk
 
+def miniBatch_SGD(p, oneHot, minix):
+    risk = avg_loss(p, oneHot)
+    xT = np.transpose(minix)
+    ones = np.ones(np.shape(oneHot)[0])
+    wGrad = (np.dot(xT, (p - oneHot))) / np.shape(minix)[0]
+    bGrad = np.dot(np.transpose(ones), (p-oneHot)) / np.shape(minix)[0]
+    return wGrad, bGrad, risk
 
-def train_gd(inputs, targets, lr, steps):
-    shape = np.shape(inputs)
-    w = np.zeros(shape[1])
-    b = 1
-    for i in range(steps):
-        yHat = (np.dot(inputs, w)+b) - targets
-        xT = np.transpose(inputs)
-        wGrad = (2/shape[0])*(np.dot(xT, yHat))
-        bGrad = (2/shape[0])*np.sum(yHat)
-        w = w-lr*wGrad
-        b = b-lr*bGrad
-    return np.concatenate(([b], w))
 
 
 #===================================================================================
@@ -121,17 +153,19 @@ def model_predictions(devx, model):
 # N_dev does not need to equal N_tr
 # program will make predictions on dev set inputs
 # and evaluate how well predictions match true output
-# using mean/average squared error loss (MSE)
-# output: print dev set MSE in scientific notation, 3 decimal places
+# using accuracy
+# output: dev set accuracy
 #===================================================================================
 def model_eval(devx, devy, model):
     p = model_predictions(devx, model)
     if np.shape(devx)[0] != np.shape(devy)[0]:
         sys.exit("Input data and target data are not the same length")
+    return accuracy(p, devy)
+
+def accuracy(p, devy):
     classes = np.argmax(p, axis=1)
     correct = np.sum(classes == devy)
-    accuracy = correct / np.shape(devx)[0]
-    print(f"{accuracy:.3f}")
+    return correct / np.shape(devy)[0]
 
 def softmax(z):
     expZ = np.exp(z - np.max(z, axis=1, keepdims=True)) 
@@ -141,12 +175,11 @@ def main():
     args = initialize()
 
     if args.train:
-        # load trainx,y devx,y model, lr, maxsteps, mb, patience, dev_freq, verbose
         trainx = np.atleast_2d(np.load(args.trainx))
         trainy = np.load(args.trainy)
         devx = np.atleast_2d(np.load(args.devx))
         devy = np.load(args.devy)
-        train_model(trainx, trainy, devx, devy, args.model, args.lr, args.max_steps, args.mb, args.patience, args.dev_freq, args.verbose)
+        train_model(trainx, trainy, devx, devy, args.lr, args.max_steps, args.mb, args.patience, args.dev_freq, args.verbose, args.model)
     elif args.predict:
         model = np.load(args.model)
         devx = np.atleast_2d(np.load(args.devx))
@@ -156,7 +189,9 @@ def main():
         devx = np.atleast_2d(np.load(args.devx))
         devy = np.load(args.devy)
         model = np.load(args.model)
-        model_eval(devx, devy, model)
+        accuracy = model_eval(devx, devy, model)
+        print(f"{accuracy:.3f}")
+
 
 if __name__ == "__main__":
     main()
